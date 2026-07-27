@@ -56,6 +56,7 @@ JS = """/* Nalo · "Tecnología textil para tu mejor versión" · tabs de produc
   var CSS=""+
     "#nalo-tabs .nt{max-width:1400px;margin:0 auto;padding:56px 24px}"+
     "#nalo-tabs h2{text-align:center;font-weight:700;letter-spacing:.03rem;font-size:clamp(22px,2.8vw,36px);margin:0 0 28px}"+
+    "#nalo-tabs h2 .v{color:#5200ff}"+
     "#nalo-tabs .nt-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}"+
     "#nalo-tabs .nt-tab{appearance:none;border:1px solid #ddd;background:#fff;color:#111;font:600 13px/1 Poppins,sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:11px 20px;border-radius:40px;cursor:pointer;transition:.15s}"+
     "#nalo-tabs .nt-tab.on{background:#5200ff;border-color:#5200ff;color:#fff}"+
@@ -69,9 +70,9 @@ JS = """/* Nalo · "Tecnología textil para tu mejor versión" · tabs de produc
     "#nalo-tabs .nt-price{text-align:center;font-size:15px}"+
     "#nalo-tabs .nt-promo{font-weight:700;color:#111}"+
     "#nalo-tabs .nt-old{color:#999;text-decoration:line-through;margin-left:6px;font-size:13px}"+
-    "@media(max-width:900px){#nalo-tabs .nt-grid{grid-template-columns:repeat(2,1fr);gap:16px}}";
+    "@media(max-width:900px){#nalo-tabs .nt-grid{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;padding-bottom:12px;grid-template-columns:none}#nalo-tabs .nt-card{flex:0 0 46%;scroll-snap-align:center}}";
   var st=document.createElement("style");st.textContent=CSS;document.head.appendChild(st);
-  mount.innerHTML='<div class="nt"><h2>Tecnología textil para tu mejor versión.</h2><div class="nt-tabs"></div><div class="nt-grid"></div></div>';
+  mount.innerHTML='<div class="nt"><h2>Tecnología textil para tu <span class="v">mejor versión.</span></h2><div class="nt-tabs"></div><div class="nt-grid"></div></div>';
   var tabsEl=mount.querySelector(".nt-tabs"),grid=mount.querySelector(".nt-grid");
   TABS.forEach(function(t,i){
     var b=document.createElement("button");
@@ -81,7 +82,7 @@ JS = """/* Nalo · "Tecnología textil para tu mejor versión" · tabs de produc
   });
   function render(tab){
     grid.innerHTML="";
-    P.filter(function(p){return inTab(p,tab);}).forEach(function(p){
+    P.filter(function(p){return inTab(p,tab);}).slice(0,4).forEach(function(p){
       var a=document.createElement("a");a.className="nt-card";a.href=p[5];
       var ph=p[3]?'<span class="nt-promo">'+money(p[3])+'</span><span class="nt-old">'+money(p[2])+'</span>':'<span class="nt-promo">'+money(p[2])+'</span>';
       a.innerHTML='<div class="nt-ph"><img loading="lazy" alt=""></div><div class="nt-name"></div><div class="nt-sub"></div><div class="nt-price">'+ph+'</div>';
