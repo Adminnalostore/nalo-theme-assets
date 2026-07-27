@@ -31,12 +31,14 @@
                  [B+"landings/musculosa/a1.webp", B+"landings/musculosa/d1.webp"],
                  [B+"landings/musculosa/a_p4.webp", B+"landings/musculosa/d_p4.webp"],
                  [B+"landings/musculosa/a2.webp", B+"landings/musculosa/d2.webp"] ] },
-      { type: "compare", title: "Por qué la Musculosa Nalo gana",
-        cols: ["Musculosa Nalo", "Faja tradicional", "Musculosa común", "Cinturón postural"],
-        rows: [ ["Invisible bajo cualquier prenda",1,0,1,0], ["Reduce la panza al instante",1,1,0,0],
+      { type: "compare", title: "Por qué Nalo gana:", highlight: "Nalo gana:", subtitle: "Ingeniería textil real.",
+        logo: B+"landings/musculosa/cmp/logo.png",
+        images: [B+"landings/musculosa/cmp/col0.png", B+"landings/musculosa/cmp/col1.png", B+"landings/musculosa/cmp/col2.png", B+"landings/musculosa/cmp/col3.png"],
+        cols: ["", "Faja tradicional", "Musculosa común", "Cinturón postural"],
+        rows: [ ["Invisible bajo cualquier prenda",1,0,1,0], ["Reduce panza al instante",1,1,0,0],
                 ["Corrige la postura",1,0,0,1], ["Transpirable y cómoda",1,0,1,0],
-                ["Apta para uso diario y deporte",1,0,1,0], ["Disimula el pecho",1,1,0,0],
-                ["Doble capa de compresión",1,1,0,0] ]},
+                ["Apta para uso diario y deporte",1,0,1,0], ["Disimula pecho",1,0,0,0],
+                ["Doble capa de compresión",1,0,0,0] ]},
       { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/musculosa/tech.webp", items: [
         ["Abdomen Plano Al Instante", "Doble capa de compresión en la zona abdominal que reduce visualmente hasta 2 talles desde el primer uso. Disimula el abdomen y el tejido adiposo del pecho sin esfuerzo."],
         ["Postura Erguida Y Confiada", "El entramado posterior ejerce una tracción ligera que alinea tus hombros y columna, corrigiendo la postura encorvada del escritorio o el celular."],
@@ -150,15 +152,23 @@
     "#nalo-landing .nl-gl-thumbs button.on{border-color:var(--v)}" +
     "#nalo-landing .nl-gl-thumbs img{width:50%;height:100%;object-fit:cover;display:block}" +
     // compare
-    "#nalo-landing .nl-cmp{max-width:880px;margin:0 auto;overflow-x:auto}" +
-    "#nalo-landing .nl-cmp table{width:100%;border-collapse:collapse;min-width:620px}" +
-    "#nalo-landing .nl-cmp th,#nalo-landing .nl-cmp td{padding:13px 8px;text-align:center;border-bottom:1px solid #eee;font-size:13px}" +
-    "#nalo-landing .nl-cmp td:first-child,#nalo-landing .nl-cmp th:first-child{text-align:left;font-weight:600}" +
-    "#nalo-landing .nl-cmp th.brand{background:var(--v);color:#fff;border-radius:12px 12px 0 0;font-weight:700}" +
-    "#nalo-landing .nl-cmp td.brand{background:rgba(82,0,255,.06)}" +
-    "#nalo-landing .nl-cmp .yes{color:var(--v);font-weight:800;font-size:16px}" +
-    "#nalo-landing .nl-cmp .brand .yes{color:var(--v)}" +
-    "#nalo-landing .nl-cmp .no{color:#d33;font-size:15px}" +
+    "#nalo-landing .nl-cmp{max-width:900px;margin:0 auto;overflow-x:auto}" +
+    "#nalo-landing .nl-cmp table{width:100%;border-collapse:collapse;min-width:640px}" +
+    "#nalo-landing .nl-cmp th,#nalo-landing .nl-cmp td{padding:14px 8px;text-align:center;border-bottom:1px solid #f0f0f0;font-size:13px;vertical-align:middle}" +
+    "#nalo-landing .nl-cmp td:first-child,#nalo-landing .nl-cmp th:first-child{text-align:left;font-weight:700}" +
+    "#nalo-landing .nl-cmp thead th{border-bottom:0;padding-top:0}" +
+    "#nalo-landing .nl-cmp th.brand{background:#f6f4ff;border-radius:16px 16px 0 0;position:relative}" +
+    "#nalo-landing .nl-cmp td.brand{background:#f6f4ff}" +
+    "#nalo-landing .nl-cmp tr:last-child td.brand{border-radius:0 0 16px 16px}" +
+    "#nalo-landing .nl-cmp-badge{background:var(--v);color:#fff;font-size:10px;font-weight:700;letter-spacing:.05em;padding:5px 0;border-radius:16px 16px 0 0;margin:0 -8px 10px}" +
+    "#nalo-landing .nl-cmp-logo{height:24px;width:auto;margin-bottom:8px;display:inline-block}" +
+    "#nalo-landing .nl-cmp-name{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:8px;min-height:30px}" +
+    "#nalo-landing .nl-cmp-prod{width:70px;height:70px;object-fit:contain;display:block;margin:0 auto}" +
+    "#nalo-landing .nl-cmp .yes,#nalo-landing .nl-cmp .no{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%}" +
+    "#nalo-landing .nl-cmp .yes{background:var(--v)}#nalo-landing .nl-cmp .no{background:#e0334b}" +
+    "#nalo-landing .nl-cmp .yes svg,#nalo-landing .nl-cmp .no svg{width:15px;height:15px}" +
+    "#nalo-landing .nl-cmp-row{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}" +
+    "#nalo-landing .nl-cmp-row.show{opacity:1;transform:none}" +
     // techsplit
     "#nalo-landing .nl-ts{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1100px;margin:0 auto}" +
     "#nalo-landing .nl-ts-media{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#f2f2f4}" +
@@ -232,12 +242,22 @@
         '</div></section>';
     }
     if (t === "compare") {
-      var head = '<tr><th></th>' + sec.cols.map(function (c, i) { return '<th class="' + (i === 0 ? "brand" : "") + '">' + esc(c) + '</th>'; }).join("") + '</tr>';
+      var titleH = sec.highlight ? esc(sec.title).replace(esc(sec.highlight), '<span class="v">' + esc(sec.highlight) + '</span>') : esc(sec.title);
+      if (sec.subtitle) titleH += ' ' + esc(sec.subtitle);
+      var head = '<tr><th></th>';
+      sec.cols.forEach(function (c, i) {
+        var brand = i === 0, inner = "";
+        if (brand) inner += '<div class="nl-cmp-badge">MEJOR OPCIÓN</div>' + (sec.logo ? '<img class="nl-cmp-logo" src="' + sec.logo + '" alt="Nalo">' : '');
+        else inner += '<div class="nl-cmp-name">' + esc(c) + '</div>';
+        if (sec.images) inner += '<img class="nl-cmp-prod" src="' + sec.images[i] + '" alt="">';
+        head += '<th class="' + (brand ? "brand" : "") + '">' + inner + '</th>';
+      });
+      head += '</tr>';
       var body = sec.rows.map(function (r) {
-        var cells = r.slice(1).map(function (v, i) { return '<td class="' + (i === 0 ? "brand " : "") + '">' + (v ? '<span class="yes">✓</span>' : '<span class="no">✕</span>') + '</td>'; }).join("");
-        return '<tr><td>' + esc(r[0]) + '</td>' + cells + '</tr>';
+        var cells = r.slice(1).map(function (v, i) { return '<td class="' + (i === 0 ? "brand " : "") + '">' + (v ? '<span class="yes"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' : '<span class="no"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></span>') + '</td>'; }).join("");
+        return '<tr class="nl-cmp-row"><td>' + esc(r[0]) + '</td>' + cells + '</tr>';
       }).join("");
-      return '<section class="nl-sec"><h2 class="nl-h">' + esc(sec.title) + '</h2><div class="nl-cmp"><table>' + head + body + '</table></div></section>';
+      return '<section class="nl-sec"><h2 class="nl-h">' + titleH + '</h2><div class="nl-cmp"><table>' + head + body + '</table></div></section>';
     }
     if (t === "techsplit") {
       var acc = sec.items.map(function (i) {
@@ -283,4 +303,22 @@
   mount.querySelectorAll(".nl-ig video").forEach(function (v) {
     v.addEventListener("click", function () { if (v.paused) v.play(); else v.pause(); });
   });
+
+  // animación de aparición de filas de la comparativa (cascada al hacer scroll)
+  var rows = mount.querySelectorAll(".nl-cmp-row");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          var row = e.target;
+          var i = [].indexOf.call(row.parentNode.querySelectorAll(".nl-cmp-row"), row);
+          setTimeout(function () { row.classList.add("show"); }, (i % 8) * 90);
+          io.unobserve(row);
+        }
+      });
+    }, { threshold: 0.15 });
+    rows.forEach(function (r) { io.observe(r); });
+  } else {
+    rows.forEach(function (r) { r.classList.add("show"); });
+  }
 })();
