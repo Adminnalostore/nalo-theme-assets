@@ -131,8 +131,9 @@
     "#nalo-landing .nl-ig video{flex:0 0 220px;aspect-ratio:9/16;object-fit:cover;border-radius:14px;background:#000;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.12)}" +
     // gallery
     "#nalo-landing .nl-gl{display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:center;max-width:1120px;margin:0 auto}" +
+    "#nalo-landing .nl-gl-left{text-align:left}" +
     "#nalo-landing .nl-gl-left h3{font-size:28px;font-weight:800;line-height:1.15;margin:0 0 6px}" +
-    "#nalo-landing .nl-gl-left .pct{display:block;font-size:80px;font-weight:800;color:var(--v);line-height:1;margin:6px 0 4px}" +
+    "#nalo-landing .nl-gl-left .pct{display:block;font-size:80px;font-weight:800;color:#111;line-height:1;margin:6px 0 4px}" +
     "#nalo-landing .nl-gl-left .pct-txt{color:#555;font-size:16px;margin:0 0 20px}" +
     "#nalo-landing .nl-gl-left hr{border:0;border-top:1px solid #e5e5e5;margin:0 0 16px}" +
     "#nalo-landing .nl-gl-left .note{color:#999;font-size:12.5px;line-height:1.55;margin:0 0 24px}" +
@@ -184,7 +185,7 @@
     "#nalo-landing .nl-feat b{display:block;font-size:16px;margin-bottom:8px}" +
     "#nalo-landing .nl-feat p{margin:0;font-size:13.5px;line-height:1.55;color:#666}" +
     "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:25px}#nalo-landing .nl-ts h2{text-align:center;font-size:24px}" +
-    "#nalo-landing .nl-gl-right{order:1}#nalo-landing .nl-gl-left{order:2;text-align:center}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-right{grid-template-columns:1fr 1fr 56px}#nalo-landing .nl-gl-left .pct{font-size:64px}}";
+    "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr 50px;gap:8px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs button{width:100%;height:auto;aspect-ratio:3/4}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
   var CHECK = '<svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>';
