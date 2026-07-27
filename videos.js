@@ -17,10 +17,10 @@
   var VIDS = ["brandon", "juan", "fabri", "bigari"];
 
   var CSS = "" +
-    "#nalo-videos .nv{max-width:1240px;margin:0 auto;padding:60px 0 64px}" +
-    "#nalo-videos h2{text-align:center;font-weight:700;letter-spacing:.02rem;font-size:clamp(24px,3vw,38px);margin:0 0 40px}" +
+    "#nalo-videos .nv{max-width:1240px;margin:0 auto;padding:44px 0 60px}" +
+    "#nalo-videos h2{text-align:center;font-weight:700;letter-spacing:.02rem;font-size:32px;margin:0 0 18px}" +
     "#nalo-videos h2 .v{color:#5200ff}" +
-    "#nalo-videos .nv-track{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px calc(50% - 150px);scroll-behavior:smooth;scrollbar-width:none}" +
+    "#nalo-videos .nv-track{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:16px calc(50% - 150px);scroll-behavior:smooth;scrollbar-width:none}" +
     "#nalo-videos .nv-track::-webkit-scrollbar{display:none}" +
     "#nalo-videos .nv-item{flex:0 0 300px;scroll-snap-align:center;transition:transform .35s cubic-bezier(.2,.7,.2,1),filter .35s;filter:grayscale(.85) brightness(.9) opacity(.6);transform:scale(.9)}" +
     "#nalo-videos .nv-item.focus{filter:none;transform:scale(1.02)}" +

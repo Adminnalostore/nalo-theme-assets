@@ -55,22 +55,22 @@ JS = """/* Nalo · "Tecnología textil para tu mejor versión" · tabs de produc
   function inTab(p,t){return t==="Bestsellers"?true:p[6].indexOf(t)!==-1;}
   var CSS=""+
     "#nalo-tabs .nt{max-width:1400px;margin:0 auto;padding:56px 24px}"+
-    "#nalo-tabs h2{text-align:center;font-weight:700;letter-spacing:.03rem;font-size:clamp(22px,2.8vw,36px);margin:0 0 28px}"+
+    "#nalo-tabs h2{text-align:center;font-weight:700;letter-spacing:.03rem;font-size:32px;margin:0 0 28px}"+
     "#nalo-tabs h2 .v{color:#5200ff}"+
     "#nalo-tabs .nt-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}"+
     "#nalo-tabs .nt-tab{appearance:none;border:1px solid #ddd;background:#fff;color:#111;font:600 13px/1 Poppins,sans-serif;letter-spacing:.04em;text-transform:uppercase;padding:11px 20px;border-radius:40px;cursor:pointer;transition:.15s}"+
     "#nalo-tabs .nt-tab.on{background:#5200ff;border-color:#5200ff;color:#fff}"+
-    "#nalo-tabs .nt-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}"+
-    "#nalo-tabs .nt-card{display:block;text-decoration:none;color:inherit}"+
+    "#nalo-tabs .nt-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;align-items:stretch}"+
+    "#nalo-tabs .nt-card{display:flex;flex-direction:column;height:100%;text-decoration:none;color:inherit}"+
     "#nalo-tabs .nt-ph{position:relative;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:#f3f3f3;box-shadow:0 0 1.5rem rgba(0,0,0,.08)}"+
     "#nalo-tabs .nt-ph img{width:100%;height:100%;object-fit:cover;transition:transform .4s}"+
     "#nalo-tabs .nt-card:hover .nt-ph img{transform:scale(1.04)}"+
-    "#nalo-tabs .nt-name{font-weight:700;font-size:15px;margin:14px 0 4px;text-align:center}"+
+    "#nalo-tabs .nt-name{font-weight:700;font-size:16px;margin:14px 0 4px;text-align:center}"+
     "#nalo-tabs .nt-sub{font-size:12.5px;color:#666;text-align:center;margin-bottom:8px}"+
     "#nalo-tabs .nt-price{text-align:center;font-size:15px}"+
     "#nalo-tabs .nt-promo{font-weight:700;color:#111}"+
     "#nalo-tabs .nt-old{color:#999;text-decoration:line-through;margin-left:6px;font-size:13px}"+
-    "#nalo-tabs .nt-buy{display:block;margin:12px auto 0;background:#000;color:#fff;font:700 12px/1 Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;border-radius:6px;text-align:center;transition:.15s}"+
+    "#nalo-tabs .nt-buy{display:block;margin:14px 0 0;margin-top:auto;background:#000;color:#fff;font:700 12px/1 Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:13px 16px;border-radius:6px;text-align:center;transition:.15s}"+
     "#nalo-tabs .nt-card:hover .nt-buy{background:#5200ff}"+
     "@media(max-width:900px){#nalo-tabs .nt-grid{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;padding-bottom:12px;grid-template-columns:none}#nalo-tabs .nt-card{flex:0 0 46%;scroll-snap-align:center}}";
   var st=document.createElement("style");st.textContent=CSS;document.head.appendChild(st);

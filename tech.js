@@ -17,11 +17,11 @@
 
   var CSS = "" +
     "#nalo-tecnologia .nt{max-width:1200px;margin:0 auto;padding:64px 24px}" +
-    "#nalo-tecnologia .nt-sub{text-align:left;font:600 13px/1 Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#999;margin:0 0 24px}" +
+    "#nalo-tecnologia .nt-sub{text-align:left;font:600 14px/1 Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#999;margin:0 0 20px}" +
     "#nalo-tecnologia .nt-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start}" +
-    "#nalo-tecnologia .nt-list{display:flex;flex-direction:column;gap:6px}" +
-    "#nalo-tecnologia .nt-item{appearance:none;background:none;border:0;text-align:left;padding:12px 0;cursor:pointer;font-family:inherit}" +
-    "#nalo-tecnologia .nt-item .n{display:block;font-weight:700;font-size:clamp(22px,2.4vw,32px);color:#cfcfcf;transition:color .2s;letter-spacing:.01em}" +
+    "#nalo-tecnologia .nt-list{display:flex;flex-direction:column;gap:0}" +
+    "#nalo-tecnologia .nt-item{appearance:none;background:none;border:0;text-align:left;padding:6px 0;cursor:pointer;font-family:inherit}" +
+    "#nalo-tecnologia .nt-item .n{display:block;font-weight:700;font-size:clamp(24px,2.8vw,38px);color:#cfcfcf;transition:color .2s;letter-spacing:.01em}" +
     "#nalo-tecnologia .nt-item .d{display:none;margin-top:10px;color:#444;font-size:15px;line-height:1.55;max-width:44ch}" +
     "#nalo-tecnologia .nt-item.on .n{color:#111}" +
     "#nalo-tecnologia .nt-item.on .d{display:block}" +
