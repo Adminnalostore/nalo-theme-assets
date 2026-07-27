@@ -16,10 +16,6 @@
 
   var LANDINGS = {
     "musculosa-reductora-2-0-nalo": [
-      { type: "accordion", title: "Detalles del tejido", items: [
-        ["25% Spandex, 75% Nylon", "Tras rigurosas pruebas de rendimiento desarrollamos una mezcla de fibras de alta densidad que garantiza el máximo nivel de compresión y modelado sin perder la elasticidad necesaria para el movimiento."],
-        ["Compresión de doble capa", "A diferencia de las prendas convencionales, usa doble panel de compresión en las zonas críticas (abdomen y pecho). El doble de soporte y el doble de resultados visuales."]
-      ]},
       { type: "instagram", title: "Miles de reseñas orgánicas", subtitle: "Más de 10 millones de visitas en Instagram",
         link: IG, videos: ["brandon", "juan", "fabri", "bigari"] },
       { type: "gallery", title: "Cambio visible desde que te la ponés.", highlight: "visible",
