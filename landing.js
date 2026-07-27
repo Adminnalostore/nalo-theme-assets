@@ -35,13 +35,13 @@
                 ["Corrige la postura",1,0,0,1], ["Transpirable y cómoda",1,0,1,0],
                 ["Apta para uso diario y deporte",1,0,1,0], ["Disimula pecho",1,0,0,0],
                 ["Doble capa de compresión",1,0,0,0] ]},
-      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/musculosa/tech.webp", items: [
-        ["Abdomen Plano Al Instante", "Doble capa de compresión en la zona abdominal que reduce visualmente hasta 2 talles desde el primer uso. Disimula el abdomen y el tejido adiposo del pecho sin esfuerzo."],
-        ["Postura Erguida Y Confiada", "El entramado posterior ejerce una tracción ligera que alinea tus hombros y columna, corrigiendo la postura encorvada del escritorio o el celular."],
-        ["Invisible Bajo La Ropa", "Costuras planas y corte seamless. No se marca bajo camisas, remeras ni ropa deportiva. Nadie nota que la llevás puesta."],
-        ["Compresión Que No Aprieta", "Mezcla de 75% Nylon y 25% Spandex que comprime sin cortar la circulación. Todo el día sin molestias ni marcas."],
-        ["Transpirable Y De Secado Rápido", "El tejido técnico permite que la piel respire y evapora la humedad rápidamente. Ideal para la oficina, eventos o entrenando."],
-        ["Calidad Premium Duradera", "Fibras de alta densidad que mantienen la compresión y forma original lavado tras lavado. Pensada para durar años."]
+      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/musculosa/tec/gif.gif", items: [
+        ["Abdomen Plano Al Instante", "Doble capa de compresión en la zona abdominal que reduce visualmente hasta 2 talles desde el primer uso. Disimula el abdomen y el tejido adiposo del pecho sin esfuerzo.", B+"landings/musculosa/tec/ic0.png"],
+        ["Postura Erguida Y Confiada", "El entramado posterior ejerce una tracción ligera que alinea tus hombros y columna, corrigiendo la postura encorvada del escritorio o el celular.", B+"landings/musculosa/tec/ic1.png"],
+        ["Invisible Bajo La Ropa", "Costuras planas y corte seamless. No se marca bajo camisas, remeras ni ropa deportiva. Nadie nota que la llevás puesta.", B+"landings/musculosa/tec/ic2.png"],
+        ["Compresión Que No Aprieta", "Mezcla de 75% Nylon y 25% Spandex que comprime sin cortar la circulación. Todo el día sin molestias ni marcas.", B+"landings/musculosa/tec/ic3.png"],
+        ["Transpirable Y De Secado Rápido", "El tejido técnico permite que la piel respire y evapora la humedad rápidamente. Ideal para la oficina, eventos o entrenando.", B+"landings/musculosa/tec/ic4.png"],
+        ["Calidad Premium Duradera", "Fibras de alta densidad que mantienen la compresión y forma original lavado tras lavado. Pensada para durar años.", B+"landings/musculosa/tec/ic5.png"]
       ]},
       { type: "stats", title: "Resultados Comprobados por Nuestros Clientes",
         note: "Resultados comprobados en un estudio interno con más de 150 usuarios del producto.",
@@ -176,10 +176,11 @@
     "#nalo-landing .nl-ts summary::-webkit-details-marker{display:none}" +
     "#nalo-landing .nl-ts summary .ic{width:26px;height:26px;flex:0 0 auto}" +
     "#nalo-landing .nl-ts summary .ic svg{width:26px;height:26px;fill:var(--v)}" +
+    "#nalo-landing .nl-ts summary .ts-ic{width:38px;height:38px;object-fit:contain;flex:0 0 auto}" +
     "#nalo-landing .nl-ts summary .t{flex:1}" +
     "#nalo-landing .nl-ts summary::after{content:'+';color:var(--v);font-size:20px}" +
     "#nalo-landing .nl-ts details[open] summary::after{content:'\\2013'}" +
-    "#nalo-landing .nl-ts p{margin:0 0 14px 36px;font-size:13.5px;line-height:1.55;color:#666}" +
+    "#nalo-landing .nl-ts p{margin:0 0 14px 48px;font-size:13.5px;line-height:1.55;color:#666}" +
     // stats
     "#nalo-landing .nl-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;margin:0 auto}" +
     "#nalo-landing .nl-stat{text-align:center}" +
@@ -259,7 +260,8 @@
     }
     if (t === "techsplit") {
       var acc = sec.items.map(function (i) {
-        return '<details><summary><span class="ic">' + CHECK + '</span><span class="t">' + esc(i[0]) + '</span></summary><p>' + esc(i[1]) + '</p></details>';
+        var icon = i[2] ? '<img class="ts-ic" src="' + i[2] + '" alt="">' : '<span class="ic">' + CHECK + '</span>';
+        return '<details><summary>' + icon + '<span class="t">' + esc(i[0]) + '</span></summary><p>' + esc(i[1]) + '</p></details>';
       }).join("");
       var media = sec.media ? '<div class="nl-ts-media"><img src="' + sec.media + '" alt=""></div>' : '<div class="nl-ts-media"></div>';
       return '<section class="nl-sec"><div class="nl-ts">' + media + '<div><h2>' + esc(sec.title) + '</h2>' + acc + '</div></div></section>';
