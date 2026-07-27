@@ -12,7 +12,7 @@
 
   var S = document.currentScript || document.querySelector('script[src*="landing.js"]');
   var B = S.src.replace(/landing\.js.*$/, "");
-  var IG = "https://www.instagram.com/nalostore/";
+  var IG = "https://www.instagram.com/nalostore__/";
 
   var LANDINGS = {
     "musculosa-reductora-2-0-nalo": [
@@ -126,11 +126,12 @@
     "#nalo-landing .nl-ac p{margin:0 4px 16px;font-size:14px;line-height:1.6;color:#666}" +
     // instagram
     "#nalo-landing .nl-ig{text-align:center}" +
-    "#nalo-landing .nl-ig .sub{color:#666;margin:-24px 0 22px;font-size:15px}" +
-    "#nalo-landing .nl-ig .btn{display:inline-block;background:var(--v);color:#fff;font-weight:700;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:14px 30px;border-radius:40px;text-decoration:none;margin-bottom:34px}" +
-    "#nalo-landing .nl-ig .reel{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none;padding:4px;justify-content:flex-start}" +
-    "#nalo-landing .nl-ig .reel::-webkit-scrollbar{display:none}" +
-    "#nalo-landing .nl-ig video{flex:0 0 220px;aspect-ratio:9/16;object-fit:cover;border-radius:14px;background:#000;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.12)}" +
+    "#nalo-landing .nl-ig-btnwrap{display:flex;justify-content:center;margin-top:4px}" +
+    "#nalo-landing .nl-ig-btn{display:inline-block;padding:2px;border-radius:999px;background:linear-gradient(90deg,#f58529 0%,#dd2a7b 50%,#8134af 100%);text-decoration:none;transition:transform .3s}" +
+    "#nalo-landing .nl-ig-btn:hover{transform:translateY(-2px) scale(1.03)}" +
+    "#nalo-landing .nl-ig-inner{display:inline-flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:11px 20px}" +
+    "#nalo-landing .nl-ig-inner>svg{width:18px;height:18px;flex:0 0 auto}" +
+    "#nalo-landing .nl-ig-inner span{font-size:14px;font-weight:600;color:#1a1a1a;letter-spacing:.2px}" +
     // gallery
     "#nalo-landing [data-gallery] .nl-h{font-size:28px}" +
     "#nalo-landing .nl-gl{display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:center;max-width:1120px;margin:0 auto}" +
@@ -211,12 +212,13 @@
       return '<section class="nl-sec"><h2 class="nl-h">' + esc(sec.title) + '</h2><div class="nl-ac">' + it + '</div></section>';
     }
     if (t === "instagram") {
-      var reel = sec.videos.map(function (k) {
-        return '<video muted loop playsinline preload="none" poster="' + B + 'videos/' + k + '.jpg"><source src="' + B + 'videos/' + k + '.mp4" type="video/mp4"></video>';
-      }).join("");
-      return '<section class="nl-sec nl-ig"><h2 class="nl-h">' + esc(sec.title) + '</h2><p class="sub">' + esc(sec.subtitle) +
-        '</p><a class="btn" href="' + sec.link + '" target="_blank" rel="noopener">Ver en Instagram</a>' +
-        '<div class="reel" data-reel="' + idx + '">' + reel + '</div></section>';
+      var IGICON = '<svg viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>';
+      return '<section class="nl-sec nl-ig">' +
+        '<div id="nalo-videos"></div>' +
+        '<h2 class="nl-h">' + esc(sec.title) + '</h2>' +
+        '<div class="nl-ig-btnwrap"><a class="nl-ig-btn" href="' + sec.link + '" target="_blank" rel="noopener">' +
+          '<span class="nl-ig-inner">' + IGICON + '<span>' + esc(sec.subtitle) + '</span></span></a></div>' +
+      '</section>';
     }
     if (t === "gallery") {
       var titleH = sec.highlight
@@ -281,6 +283,13 @@
   }
 
   mount.innerHTML = secs.map(render).join("");
+
+  // carrusel de videos igual al de la home (reutiliza videos.js sobre #nalo-videos)
+  if (mount.querySelector("#nalo-videos")) {
+    var vs = document.createElement("script");
+    vs.src = B + "videos.js";
+    document.body.appendChild(vs);
+  }
 
   // galería antes/después seleccionable
   mount.querySelectorAll("[data-gallery]").forEach(function (g) {
