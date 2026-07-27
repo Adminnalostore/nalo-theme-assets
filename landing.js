@@ -157,10 +157,10 @@
     "#nalo-landing .nl-cmp th,#nalo-landing .nl-cmp td{padding:14px 8px;text-align:center;border-bottom:1px solid #f0f0f0;font-size:13px;vertical-align:middle}" +
     "#nalo-landing .nl-cmp td:first-child,#nalo-landing .nl-cmp th:first-child{text-align:left;font-weight:700}" +
     "#nalo-landing .nl-cmp thead th{border-bottom:0;padding-top:0}" +
-    "#nalo-landing .nl-cmp th.brand{background:#f6f4ff;border-radius:16px 16px 0 0;position:relative}" +
+    "#nalo-landing .nl-cmp th.brand{background:#f6f4ff;border-radius:16px 16px 0 0;position:relative;padding-top:26px}" +
     "#nalo-landing .nl-cmp td.brand{background:#f6f4ff}" +
     "#nalo-landing .nl-cmp tr:last-child td.brand{border-radius:0 0 16px 16px}" +
-    "#nalo-landing .nl-cmp-badge{background:var(--v);color:#fff;font-size:10px;font-weight:700;letter-spacing:.05em;padding:5px 0;border-radius:16px 16px 0 0;margin:0 -8px 10px}" +
+    "#nalo-landing .nl-cmp-badge{position:absolute;top:8px;left:50%;transform:translateX(-50%);background:var(--v);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;padding:6px 16px;border-radius:40px;white-space:nowrap}" +
     "#nalo-landing .nl-cmp-logo{height:24px;width:auto;margin-bottom:8px;display:inline-block}" +
     "#nalo-landing .nl-cmp-name{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:8px;min-height:30px}" +
     "#nalo-landing .nl-cmp-prod{width:70px;height:70px;object-fit:contain;display:block;margin:0 auto}" +
