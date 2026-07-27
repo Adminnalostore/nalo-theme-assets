@@ -7,6 +7,7 @@
   var mount = document.getElementById("nalo-videos");
   if (!mount || mount.dataset.done) return;
   mount.dataset.done = "1";
+  var bare = mount.getAttribute("data-bare") === "1"; // solo videos, sin título ni cards
 
   var S = document.currentScript || document.querySelector('script[src*="videos.js"]');
   var BASE = S.src.replace(/videos\.js.*$/, "");
@@ -58,16 +59,16 @@
     '<svg class="s-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>' +
     '</button>';
   function itemHTML(k) {
+    var card = bare ? "" : '<a class="nv-card" href="' + PROD_URL + '"><img src="' + PROD.thumb + '" alt="">' +
+      '<div class="nm"><b>' + PROD.name + '</b><span class="pr"><span class="promo">' + PROD.promo +
+      '</span><span class="old">' + PROD.old + '</span></span></div><span class="add">+</span></a>';
     return '<div class="nv-item">' +
       '<div class="nv-vid" data-k="' + k + '"><video preload="none" muted loop playsinline poster="' + CDN + k + '.jpg">' +
-        '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + SOUND + '</div>' +
-      '<a class="nv-card" href="' + PROD_URL + '"><img src="' + PROD.thumb + '" alt="">' +
-        '<div class="nm"><b>' + PROD.name + '</b><span class="pr"><span class="promo">' + PROD.promo +
-        '</span><span class="old">' + PROD.old + '</span></span></div><span class="add">+</span></a>' +
+        '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + SOUND + '</div>' + card +
     '</div>';
   }
 
-  mount.innerHTML = '<div class="nv"><h2>Confiado por los <span class="v">argentinos</span></h2>' +
+  mount.innerHTML = '<div class="nv">' + (bare ? '' : '<h2>Confiado por los <span class="v">argentinos</span></h2>') +
     '<div class="nv-track">' + SEQ.map(itemHTML).join("") + '</div>' +
     '<div class="nv-nav"><button class="prev" aria-label="Anterior">‹</button><button class="next" aria-label="Siguiente">›</button></div></div>';
 
