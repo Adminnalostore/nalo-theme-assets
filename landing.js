@@ -145,9 +145,9 @@
     "#nalo-landing .nl-gl-right .pill.dark{background:#111}" +
     "#nalo-landing .nl-gl-right .pill.vio{background:var(--v)}" +
     "#nalo-landing .nl-gl-thumbs{display:flex;flex-direction:column;gap:8px}" +
-    "#nalo-landing .nl-gl-thumbs button{width:72px;height:56px;border-radius:8px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:none}" +
+    "#nalo-landing .nl-gl-thumbs button{display:flex;gap:2px;width:82px;height:52px;border-radius:8px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:#f2f2f2}" +
     "#nalo-landing .nl-gl-thumbs button.on{border-color:var(--v)}" +
-    "#nalo-landing .nl-gl-thumbs img{width:100%;height:100%;object-fit:cover;display:block}" +
+    "#nalo-landing .nl-gl-thumbs img{width:50%;height:100%;object-fit:cover;display:block}" +
     // compare
     "#nalo-landing .nl-cmp{max-width:880px;margin:0 auto;overflow-x:auto}" +
     "#nalo-landing .nl-cmp table{width:100%;border-collapse:collapse;min-width:620px}" +
@@ -185,7 +185,7 @@
     "#nalo-landing .nl-feat b{display:block;font-size:16px;margin-bottom:8px}" +
     "#nalo-landing .nl-feat p{margin:0;font-size:13.5px;line-height:1.55;color:#666}" +
     "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:25px}#nalo-landing .nl-ts h2{text-align:center;font-size:24px}" +
-    "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr 50px;gap:8px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs button{width:100%;height:auto;aspect-ratio:3/4}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
+    "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:8px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:74px;height:48px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
   var CHECK = '<svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>';
@@ -212,7 +212,7 @@
         ? esc(sec.title).replace(esc(sec.highlight), '<span class="v">' + esc(sec.highlight) + '</span>')
         : esc(sec.title);
       var thumbs = sec.pairs.map(function (p, i) {
-        return '<button data-i="' + i + '"' + (i === 0 ? ' class="on"' : '') + '><img src="' + p[1] + '" alt=""></button>';
+        return '<button data-i="' + i + '"' + (i === 0 ? ' class="on"' : '') + '><img src="' + p[0] + '" alt=""><img src="' + p[1] + '" alt=""></button>';
       }).join("");
       return '<section class="nl-sec" data-gallery="' + idx + '"><h2 class="nl-h">' + titleH + '</h2>' +
         '<div class="nl-gl">' +
