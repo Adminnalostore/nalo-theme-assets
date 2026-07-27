@@ -8,7 +8,8 @@
   if (!mount || mount.dataset.done) return;
   mount.dataset.done = "1";
 
-  var A = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/ing/";
+  var S = document.currentScript || document.querySelector('script[src*="ingenieria.js"]');
+  var A = S.src.replace(/ingenieria\.js.*$/, "") + "ing/";
   var COLS = [
     ["icon-textil.png", "Ingeniería Textil", "Fórmulas y herramientas diseñadas con precisión para un calce discreto, efectivo y funcional."],
     ["icon-rendimiento.png", "Rendimiento Diario", "Calce discreto y cómodo que acompaña tus movimientos, potenciando tu figura y confianza."],

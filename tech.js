@@ -6,7 +6,8 @@
   if (!mount || mount.dataset.done) return;
   mount.dataset.done = "1";
 
-  var IMG = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/tech/";
+  var S = document.currentScript || document.querySelector('script[src*="tech.js"]');
+  var IMG = S.src.replace(/tech\.js.*$/, "") + "tech/";
   var ITEMS = [
     ["Postura y silueta", "Doble capa de compresión que reduce contorno y alinea la espalda. Invisible bajo cualquier prenda.", IMG + "postura.webp"],
     ["Versatilidad diaria", "La misma tecnología reductora en formato remera. Modeladora, antitranspirante y lista para usar todo el día.", IMG + "versatilidad.webp"],

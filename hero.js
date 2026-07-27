@@ -9,8 +9,10 @@
   if (!mount || mount.dataset.done) return;
   mount.dataset.done = "1";
 
-  var CDN = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/hero/";
-  var LG = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/logos/";
+  var S = document.currentScript || document.querySelector('script[src*="hero.js"]');
+  var BASE = S.src.replace(/hero\.js.*$/, "");
+  var CDN = BASE + "hero/";
+  var LG = BASE + "logos/";
   var PRENSA = [
     ["lanacion", "Innovación textil que redefine la comodidad del hombre moderno."],
     ["infobae", "La tendencia invisible que revoluciona cómo vestirse hoy."],

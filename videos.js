@@ -8,11 +8,13 @@
   if (!mount || mount.dataset.done) return;
   mount.dataset.done = "1";
 
-  var CDN = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/videos/";
+  var S = document.currentScript || document.querySelector('script[src*="videos.js"]');
+  var BASE = S.src.replace(/videos\.js.*$/, "");
+  var CDN = BASE + "videos/";
   var PROD_URL = "https://tiendadeadmin14.mitiendanube.com/productos/musculosa-reductora-2-0-nalo/";
   var PROD = {
     name: "Musculosa Reductora", promo: "$59.900", old: "$119.800",
-    thumb: "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/tech/postura.webp"
+    thumb: BASE + "tech/postura.webp"
   };
   var VIDS = ["brandon", "juan", "fabri", "bigari"];
 
