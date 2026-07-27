@@ -18,10 +18,11 @@
 
   var CSS = "" +
     "#nalo-ingenieria .ni{background:#000;color:#fff;padding:60px clamp(16px,4vw,56px)}" +
-    "#nalo-ingenieria .ni-in{max-width:1120px;margin:0 auto;text-align:center}" +
-    "#nalo-ingenieria .ni-logo{height:34px;width:auto;margin:0 auto 18px}" +
-    "#nalo-ingenieria .ni-h{text-align:center;font:800 clamp(20px,2.2vw,30px)/1.2 Poppins,sans-serif;letter-spacing:.01em;margin:0 auto 40px;max-width:22ch}" +
+    "#nalo-ingenieria .ni-in{max-width:1120px;margin:0 auto}" +
     "#nalo-ingenieria .ni-body{display:grid;grid-template-columns:300px 1fr;gap:52px;align-items:center}" +
+    "#nalo-ingenieria .ni-right{text-align:center}" +
+    "#nalo-ingenieria .ni-logo{height:34px;width:auto;margin:0 auto 16px}" +
+    "#nalo-ingenieria .ni-h{text-align:center;font:800 clamp(20px,2.2vw,30px)/1.2 Poppins,sans-serif;letter-spacing:.01em;margin:0 auto 34px}" +
     "#nalo-ingenieria .ni-foto{width:300px;aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:#222;flex:0 0 auto}" +
     "#nalo-ingenieria .ni-foto img{width:100%;height:100%;object-fit:cover}" +
     "#nalo-ingenieria .ni-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:34px}" +
@@ -38,11 +39,11 @@
   }).join("");
   mount.innerHTML =
     '<div class="ni"><div class="ni-in">' +
-      '<img class="ni-logo" src="' + A + 'logo-nalo.png" alt="Nalo">' +
-      '<h2 class="ni-h">Ingeniería inteligente para el hombre moderno.</h2>' +
       '<div class="ni-body">' +
         '<div class="ni-foto"><img src="' + A + 'ing-foto.webp" alt=""></div>' +
-        '<div class="ni-txt">' +
+        '<div class="ni-right">' +
+          '<img class="ni-logo" src="' + A + 'logo-nalo.png" alt="Nalo">' +
+          '<h2 class="ni-h">Ingeniería inteligente para el hombre moderno.</h2>' +
           '<div class="ni-cols">' + cols + '</div>' +
           '<a class="ni-cta" href="/productos">Potenciá tu día</a>' +
         '</div>' +

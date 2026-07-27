@@ -33,6 +33,12 @@
     "#nalo-videos .nv-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.1);transition:.2s}" +
     "#nalo-videos .nv-play svg{width:50px;height:50px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))}" +
     "#nalo-videos .nv-vid.on .nv-play{opacity:0;pointer-events:none}" +
+    "#nalo-videos .nv-sound{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.5);color:#fff;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:4;padding:0}" +
+    "#nalo-videos .nv-item.focus .nv-sound{display:flex}" +
+    "#nalo-videos .nv-sound svg{width:20px;height:20px;fill:#fff}" +
+    "#nalo-videos .nv-sound .s-on{display:none}" +
+    "#nalo-videos .nv-sound.on .s-off{display:none}" +
+    "#nalo-videos .nv-sound.on .s-on{display:block}" +
     "#nalo-videos .nv-card{display:flex;align-items:center;gap:11px;margin-top:14px;padding:9px 11px;border:1px solid #eee;border-radius:12px;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(0,0,0,.06);background:#fff}" +
     "#nalo-videos .nv-card img{width:46px;height:56px;object-fit:cover;border-radius:8px;flex:0 0 auto}" +
     "#nalo-videos .nv-card .nm{flex:1;min-width:0}" +
@@ -47,10 +53,14 @@
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
   var PLAY = '<div class="nv-play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>';
+  var SOUND = '<button class="nv-sound" aria-label="Sonido">' +
+    '<svg class="s-off" viewBox="0 0 24 24"><path d="M16.5 12A4.5 4.5 0 0014 7.97v2.21l2.45 2.45c.03-.2.05-.42.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.8 8.8 0 0021 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.9 8.9 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>' +
+    '<svg class="s-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>' +
+    '</button>';
   function itemHTML(k) {
     return '<div class="nv-item">' +
       '<div class="nv-vid" data-k="' + k + '"><video preload="none" muted loop playsinline poster="' + CDN + k + '.jpg">' +
-        '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + '</div>' +
+        '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + SOUND + '</div>' +
       '<a class="nv-card" href="' + PROD_URL + '"><img src="' + PROD.thumb + '" alt="">' +
         '<div class="nm"><b>' + PROD.name + '</b><span class="pr"><span class="promo">' + PROD.promo +
         '</span><span class="old">' + PROD.old + '</span></span></div><span class="add">+</span></a>' +
@@ -117,6 +127,12 @@
   mount.querySelector(".next").addEventListener("click", function () { centerIndex(nearestIndex() + 1, true); });
   itemEls.forEach(function (it, i) {
     it.querySelector(".nv-vid").addEventListener("click", function () { centerIndex(i, true); });
+    var snd = it.querySelector(".nv-sound"), vv = it.querySelector("video");
+    snd.addEventListener("click", function (e) {
+      e.stopPropagation();
+      vv.muted = !vv.muted;
+      snd.classList.toggle("on", !vv.muted);
+    });
   });
 
   // arranque: centrar el 2do del set central
