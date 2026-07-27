@@ -43,6 +43,72 @@
         ["Sebastián L.", "Pensé que iba a ser incómoda pero la tenés puesta todo el día sin darte cuenta. Muy buena calidad.", 5],
         ["Diego F.", "Me corrige la postura y me veo más flaco al instante. La recomiendo totalmente.", 5]
       ]}
+    ],
+
+    "coolbamboo-pack-de-4-boxers-de-tela-de-bambu": [
+      { type: "features", title: "Tecnología Textil Que Trabaja Por Vos", items: [
+        ["Bambú, No Algodón", "El algodón absorbe la humedad y se queda con ella todo el día. El bambú la toma y la evapora: absorbe hasta 70% más y se seca solo. Una de las fibras más suaves que existen, regula la temperatura sola."],
+        ["Frescura Que Dura", "El olor lo hacen las bacterias que crecen en la humedad. El bambú no la retiene, así que no tienen dónde crecer. Doce horas afuera y seguís sintiéndote recién cambiado."],
+        ["Ventilación Donde Hace Falta", "Tejido abierto en el panel de bambú: el aire circula justo en la zona donde más calor se acumula. Está puesta donde el problema existe, no de adorno."],
+        ["Cero Fricción", "Costuras planas y el tacto sedoso del bambú. Sin roces, sin marcas, sin acomodarte cada dos cuadras."],
+        ["Elasticidad Que Vuelve", "Se estira en cuatro direcciones y recupera la forma. No se estaquea, no queda colgando, no se deforma después de tres lavados."],
+        ["Calce A Medida", "Diseño anatómico con soporte donde lo necesitás y cintura antienrolle que no se dobla ni aprieta."]
+      ]},
+      { type: "compare", title: "Por qué el Boxer Nalo gana",
+        cols: ["Boxer Nalo", "Algodón", "Algodón con lycra", "Deportivo"],
+        rows: [
+          ["Absorbe y evapora la humedad", 1, 0, 0, 1],
+          ["Antiolor durante todo el día", 1, 0, 0, 0],
+          ["Ventilación en la zona", 1, 0, 0, 1],
+          ["No se deforma con el uso", 1, 0, 1, 1],
+          ["Cintura que no se enrolla", 1, 0, 0, 0],
+          ["Suavidad sin fricción", 1, 1, 1, 0]
+        ]},
+      { type: "faq", title: "Preguntas frecuentes", items: [
+        ["¿Qué es la fibra de bambú y por qué se usa en los boxers?", "Es un material natural apreciado por ser suave, transpirable y respetuoso con el medio ambiente. La usamos para dar un confort óptimo y promover una mejor higiene íntima."],
+        ["¿En qué se diferencia la transpirabilidad del bambú?", "Permite que el aire circule, reduciendo la humedad y la transpiración. Te sentís cómodo y fresco sin importar tu actividad."],
+        ["¿Cómo se compara la durabilidad con un boxer tradicional?", "El material de alta calidad los hace más resistentes al desgaste: duran más que los calzoncillos regulares."],
+        ["¿Son adecuados para piel sensible?", "Sí. La suavidad del bambú reduce el roce y ayuda a mantener una higiene impecable en las áreas íntimas."]
+      ]},
+      { type: "reviews", title: "Lo que dicen nuestros clientes", items: [
+        ["Martín G.", "Los uso todos los días, la diferencia con el algodón se nota. No transpirás igual.", 5],
+        ["Nicolás P.", "Súper suaves y frescos. Ya compré el segundo pack.", 5],
+        ["Julián R.", "Cero olor al final del día, aunque haga calor. Muy recomendables.", 5]
+      ]}
+    ],
+
+    "pantalon-antiarrugas-nalo": [
+      { type: "features", title: "La tela hace el trabajo, vos no", items: [
+        ["Impecable Sin Planchar", "Las fibras de poliéster tienen memoria: se doblan pero recuerdan su forma. A las seis de la tarde, después de ocho horas sentado, el pantalón está igual que a la mañana."],
+        ["Repele Líquidos Y Manchas", "La tela repele el agua y las salpicaduras: los líquidos resbalan sin penetrar. Un café o gaseosa que se vuelca se limpia con una servilleta, sin dejar mancha."],
+        ["Estructura Que No Se Deforma", "El 95% de poliéster de alta densidad sostiene el pliegue, la caída de la pierna y la forma de la rodilla. Nadie nota que es elástico. Vos sí."],
+        ["Elasticidad En 4 Direcciones", "El spandex está tejido a lo largo y a lo ancho. Te agachás, cruzás la pierna, subís escaleras de a dos. El pantalón te sigue y vuelve solo a su lugar."],
+        ["Comodidad De Ocho Horas", "Cintura elastizada oculta y un tiro calculado para estar sentado, no solo parado. Llegás a casa y no es lo primero que te sacás."],
+        ["Lavable A Máquina", "El poliéster no encoge, no destiñe y no pierde la forma. Lavarropas en frío, colgar, listo. Nunca más tintorería ni plancha un domingo a la noche."]
+      ]},
+      { type: "compare", title: "Por qué el Pantalón Nalo gana",
+        cols: ["Pantalón Nalo", "De vestir clásico", "Chino de algodón", "Deportivo"],
+        rows: [
+          ["No se arruga (sin plancha)", 1, 0, 0, 1],
+          ["Repele líquidos y manchas", 1, 0, 0, 0],
+          ["Elástico en 4 direcciones", 1, 0, 0, 1],
+          ["Mantiene la forma todo el día", 1, 1, 0, 0],
+          ["Lavable en casa, sin tintorería", 1, 0, 1, 1],
+          ["Formal y casual a la vez", 1, 1, 1, 0]
+        ]},
+      { type: "faq", title: "Preguntas frecuentes", items: [
+        ["¿Se va a notar que no son pantalones de vestir comunes?", "No. De frente, de costado y de atrás son un pantalón de vestir. Nadie en la oficina va a ver la diferencia. Vos sí, cuando llegue la tarde."],
+        ["¿Realmente no se arrugan?", "No necesitan plancha: la tela libera las arrugas sola cuando el pantalón vuelve a colgar. Ocho horas sentado, un vuelo, doblado en la valija: te parás y está liso."],
+        ["¿Es cierto que repele los líquidos?", "Sí. La tela repele el agua y las salpicaduras: en vez de absorberse, quedan sobre la superficie y resbalan. Un derrame de café o gaseosa se limpia con una servilleta."],
+        ["¿Qué talle pido?", "Si estás entre dos, pedí el más grande. La tela tiene tanto elástico que un poco de más nunca es problema. La tabla de talles está en la última foto del producto."],
+        ["¿Sirven para un evento formal, un casamiento?", "Sí. Con saco y zapatos de vestir es un pantalón de traje. Y es el pantalón con el que vas a estar sentado seis horas en la fiesta sin querer sacártelo."],
+        ["¿Cómo los lavo?", "Lavarropas en agua fría, colgado a secar. Nada más. No se planchan, no van a la tintorería, no encogen y no destiñen."]
+      ]},
+      { type: "reviews", title: "Lo que dicen nuestros clientes", items: [
+        ["Federico A.", "Lo uso para trabajar y llego a la noche sin una arruga. Impecable.", 5],
+        ["Gonzalo M.", "Se me volcó café y lo limpié con una servilleta. Increíble.", 5],
+        ["Lucas D.", "Comodísimo y no parece elástico. Va con todo, formal o informal.", 5]
+      ]}
     ]
   };
 
@@ -88,6 +154,14 @@
     "#nalo-landing .nl-rev .stars{color:#ffb400;font-size:15px;margin-bottom:10px}" +
     "#nalo-landing .nl-rev p{margin:0 0 14px;font-size:14px;line-height:1.55;color:#333;font-style:italic}" +
     "#nalo-landing .nl-rev b{font-size:13px;color:#111}" +
+    // faq
+    "#nalo-landing .nl-faq{max-width:760px;margin:0 auto}" +
+    "#nalo-landing .nl-faq details{border-bottom:1px solid #eee}" +
+    "#nalo-landing .nl-faq summary{list-style:none;cursor:pointer;padding:18px 4px;font-weight:600;font-size:15px;color:#111;display:flex;justify-content:space-between;align-items:center;gap:12px}" +
+    "#nalo-landing .nl-faq summary::-webkit-details-marker{display:none}" +
+    "#nalo-landing .nl-faq summary::after{content:'+';color:var(--v);font-size:22px;font-weight:400;flex:0 0 auto}" +
+    "#nalo-landing .nl-faq details[open] summary::after{content:'\\2013'}" +
+    "#nalo-landing .nl-faq p{margin:0 4px 18px;font-size:14px;line-height:1.6;color:#666}" +
     "@media(max-width:768px){#nalo-landing .nl-feats,#nalo-landing .nl-revs{grid-template-columns:1fr}#nalo-landing .nl-h{font-size:26px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
@@ -125,6 +199,12 @@
         return '<div class="nl-rev"><div class="stars">' + "★".repeat(it[2]) + '</div><p>“' + esc(it[1]) + '”</p><b>' + esc(it[0]) + '</b></div>';
       }).join("");
       return '<section class="nl-sec"><h2 class="nl-h">' + esc(sec.title) + '</h2><div class="nl-revs">' + rv + '</div></section>';
+    }
+    if (sec.type === "faq") {
+      var fq = sec.items.map(function (it) {
+        return '<details><summary>' + esc(it[0]) + '</summary><p>' + esc(it[1]) + '</p></details>';
+      }).join("");
+      return '<section class="nl-sec"><h2 class="nl-h">' + esc(sec.title) + '</h2><div class="nl-faq">' + fq + '</div></section>';
     }
     return "";
   }
