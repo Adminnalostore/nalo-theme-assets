@@ -107,7 +107,7 @@
   var CSS = "" +
     "#nalo-landing{--v:#5200ff;font-family:Poppins,sans-serif;color:#111}" +
     "#nalo-landing .nl-sec{max-width:1160px;margin:0 auto;padding:52px 24px}" +
-    "#nalo-landing .nl-h{text-align:center;font-weight:700;font-size:32px;letter-spacing:.02rem;margin:0 0 34px}" +
+    "#nalo-landing .nl-h{text-align:center;font-weight:700;font-size:40px;letter-spacing:.02rem;margin:0 0 34px}" +
     "#nalo-landing .nl-h .v{color:var(--v)}" +
     // accordion / faq
     "#nalo-landing .nl-ac{max-width:760px;margin:0 auto}" +
@@ -129,7 +129,6 @@
     "#nalo-landing .nl-ig-inner>svg{width:18px;height:18px;flex:0 0 auto}" +
     "#nalo-landing .nl-ig-inner span{font-size:14px;font-weight:600;color:#1a1a1a;letter-spacing:.2px}" +
     // gallery
-    "#nalo-landing [data-gallery] .nl-h{font-size:28px}" +
     "#nalo-landing .nl-gl{display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:center;max-width:1120px;margin:0 auto}" +
     "#nalo-landing .nl-gl-left{text-align:left}" +
     "#nalo-landing .nl-gl-left h3{font-size:24px;font-weight:800;line-height:1.15;margin:0 0 6px}" +
@@ -170,17 +169,17 @@
     "#nalo-landing .nl-ts{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1100px;margin:0 auto}" +
     "#nalo-landing .nl-ts-media{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#f2f2f4}" +
     "#nalo-landing .nl-ts-media img{width:100%;height:100%;object-fit:cover}" +
-    "#nalo-landing .nl-ts h2{text-align:left;font-size:30px;font-weight:800;margin:0 0 22px}" +
+    "#nalo-landing .nl-ts h2{text-align:left;font-size:40px;font-weight:700;margin:0 0 22px}" +
     "#nalo-landing .nl-ts details{border-bottom:1px solid #eee}" +
     "#nalo-landing .nl-ts summary{list-style:none;cursor:pointer;padding:14px 0;font-weight:600;font-size:15px;display:flex;align-items:center;gap:10px}" +
     "#nalo-landing .nl-ts summary::-webkit-details-marker{display:none}" +
     "#nalo-landing .nl-ts summary .ic{width:26px;height:26px;flex:0 0 auto}" +
     "#nalo-landing .nl-ts summary .ic svg{width:26px;height:26px;fill:var(--v)}" +
-    "#nalo-landing .nl-ts summary .ts-ic{width:38px;height:38px;object-fit:contain;flex:0 0 auto}" +
-    "#nalo-landing .nl-ts summary .t{flex:1}" +
+    "#nalo-landing .nl-ts summary .ts-ic{width:30px;height:30px;object-fit:contain;flex:0 0 auto}" +
+    "#nalo-landing .nl-ts summary .t{flex:1;text-align:left}" +
     "#nalo-landing .nl-ts summary::after{content:'+';color:var(--v);font-size:20px}" +
     "#nalo-landing .nl-ts details[open] summary::after{content:'\\2013'}" +
-    "#nalo-landing .nl-ts p{margin:0 0 14px 48px;font-size:13.5px;line-height:1.55;color:#666}" +
+    "#nalo-landing .nl-ts p{margin:0 0 14px 40px;font-size:14px;line-height:1.55;color:#666;text-align:left}" +
     // stats
     "#nalo-landing .nl-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;margin:0 auto}" +
     "#nalo-landing .nl-stat{text-align:center}" +
@@ -193,7 +192,7 @@
     "#nalo-landing .nl-feat{background:#f7f7f8;border-radius:16px;padding:24px}" +
     "#nalo-landing .nl-feat b{display:block;font-size:16px;margin-bottom:8px}" +
     "#nalo-landing .nl-feat p{margin:0;font-size:13.5px;line-height:1.55;color:#666}" +
-    "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:25px}#nalo-landing .nl-ts h2{text-align:center;font-size:24px}" +
+    "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
     "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:5px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:60px;height:40px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
