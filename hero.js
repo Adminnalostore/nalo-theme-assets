@@ -8,11 +8,12 @@
   mount.dataset.done = "1";
 
   var CDN = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/hero/";
+  var LG = "https://cdn.jsdelivr.net/gh/Adminnalostore/nalo-theme-assets@main/logos/";
   var PRENSA = [
-    ["La Nación", "Innovación textil que redefine la comodidad del hombre moderno."],
-    ["Infobae", "La tendencia invisible que revoluciona cómo vestirse hoy."],
-    ["Clarín", "Inversión inteligente para el hombre que busca presencia."],
-    ["Health", "La marca argentina que une bienestar masculino con ingeniería textil de vanguardia."]
+    ["lanacion", "Innovación textil que redefine la comodidad del hombre moderno."],
+    ["infobae", "La tendencia invisible que revoluciona cómo vestirse hoy."],
+    ["clarin", "Inversión inteligente para el hombre que busca presencia."],
+    ["health", "La marca argentina que une bienestar masculino con ingeniería textil de vanguardia."]
   ];
 
   var CSS = "" +
@@ -32,7 +33,7 @@
     "#nalo-hero .nh-prensa h3{text-align:center;font:700 clamp(15px,1.8vw,21px)/1.3 Poppins,sans-serif;margin:0 0 36px}" +
     "#nalo-hero .nh-quotes{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;max-width:1200px;margin:0 auto}" +
     "#nalo-hero .nh-q{text-align:center}" +
-    "#nalo-hero .nh-q .m{display:block;font:800 15px/1 Poppins,sans-serif;letter-spacing:.05em;text-transform:uppercase;margin-bottom:12px}" +
+    "#nalo-hero .nh-q .lg{display:block;height:26px;width:auto;max-width:130px;object-fit:contain;margin:0 auto 14px}" +
     "#nalo-hero .nh-q .t{font:italic 400 13.5px/1.5 Poppins,sans-serif;opacity:.92}" +
     "@media(max-width:768px){" +
       "#nalo-hero .nh-wrap{padding:10px 12px 0}" +
@@ -45,7 +46,7 @@
     "}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
-  var quotes = PRENSA.map(function () { return '<div class="nh-q"><span class="m"></span><span class="t"></span></div>'; }).join("");
+  var quotes = PRENSA.map(function () { return '<div class="nh-q"><img class="lg" alt=""><span class="t"></span></div>'; }).join("");
   mount.innerHTML =
     '<div class="nh-wrap"><div class="nh">' +
       '<img class="nh-bg d" src="' + CDN + 'hero-desktop.webp" alt="">' +
@@ -61,7 +62,7 @@
 
   var qs = mount.querySelectorAll(".nh-q");
   PRENSA.forEach(function (p, i) {
-    qs[i].querySelector(".m").textContent = p[0];
+    qs[i].querySelector(".lg").src = LG + p[0] + ".png";
     qs[i].querySelector(".t").textContent = "“" + p[1] + "”";
   });
 })();
