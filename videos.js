@@ -52,7 +52,7 @@
         '</span><span class="old">' + PROD.old + '</span></span></div><span class="add">+</span></a>' +
     '</div>';
   }).join("");
-  var dots = VIDS.map(function (_, i) { return '<button data-i="' + i + '"' + (i === 0 ? ' class="on"' : '') + '></button>'; }).join("");
+  var dots = VIDS.map(function (_, i) { return '<button data-i="' + i + '"' + (i === 1 ? ' class="on"' : '') + '></button>'; }).join("");
 
   mount.innerHTML = '<div class="nv"><h2>Confiado por los <span class="v">argentinos</span></h2>' +
     '<div class="nv-track">' + items + '</div><div class="nv-dots">' + dots + '</div></div>';
@@ -95,6 +95,6 @@
   dotEls.forEach(function (d, i) {
     d.addEventListener("click", function () { itemEls[i].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" }); });
   });
-  // arranque: centrar el primero y destacarlo
-  setTimeout(function () { itemEls[0].scrollIntoView({ inline: "center", block: "nearest" }); focusCentered(); }, 60);
+  // arranque: centrar el SEGUNDO video (evita el hueco a la izquierda) y destacarlo
+  setTimeout(function () { itemEls[1].scrollIntoView({ inline: "center", block: "nearest" }); focusCentered(); }, 60);
 })();

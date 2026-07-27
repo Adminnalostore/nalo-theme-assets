@@ -70,6 +70,8 @@ JS = """/* Nalo · "Tecnología textil para tu mejor versión" · tabs de produc
     "#nalo-tabs .nt-price{text-align:center;font-size:15px}"+
     "#nalo-tabs .nt-promo{font-weight:700;color:#111}"+
     "#nalo-tabs .nt-old{color:#999;text-decoration:line-through;margin-left:6px;font-size:13px}"+
+    "#nalo-tabs .nt-buy{display:block;margin:12px auto 0;background:#000;color:#fff;font:700 12px/1 Poppins,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;border-radius:6px;text-align:center;transition:.15s}"+
+    "#nalo-tabs .nt-card:hover .nt-buy{background:#5200ff}"+
     "@media(max-width:900px){#nalo-tabs .nt-grid{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;padding-bottom:12px;grid-template-columns:none}#nalo-tabs .nt-card{flex:0 0 46%;scroll-snap-align:center}}";
   var st=document.createElement("style");st.textContent=CSS;document.head.appendChild(st);
   mount.innerHTML='<div class="nt"><h2>Tecnología textil para tu <span class="v">mejor versión.</span></h2><div class="nt-tabs"></div><div class="nt-grid"></div></div>';
@@ -85,7 +87,7 @@ JS = """/* Nalo · "Tecnología textil para tu mejor versión" · tabs de produc
     P.filter(function(p){return inTab(p,tab);}).slice(0,4).forEach(function(p){
       var a=document.createElement("a");a.className="nt-card";a.href=p[5];
       var ph=p[3]?'<span class="nt-promo">'+money(p[3])+'</span><span class="nt-old">'+money(p[2])+'</span>':'<span class="nt-promo">'+money(p[2])+'</span>';
-      a.innerHTML='<div class="nt-ph"><img loading="lazy" alt=""></div><div class="nt-name"></div><div class="nt-sub"></div><div class="nt-price">'+ph+'</div>';
+      a.innerHTML='<div class="nt-ph"><img loading="lazy" alt=""></div><div class="nt-name"></div><div class="nt-sub"></div><div class="nt-price">'+ph+'</div><span class="nt-buy">Comprar</span>';
       a.querySelector("img").src=p[4];
       a.querySelector(".nt-name").textContent=p[0];
       a.querySelector(".nt-sub").textContent=p[1];

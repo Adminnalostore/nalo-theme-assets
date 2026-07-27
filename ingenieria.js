@@ -16,18 +16,19 @@
   ];
 
   var CSS = "" +
-    "#nalo-ingenieria .ni{background:#000;color:#fff;padding:64px clamp(16px,4vw,56px)}" +
-    "#nalo-ingenieria .ni-in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}" +
-    "#nalo-ingenieria .ni-foto{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#222}" +
+    "#nalo-ingenieria .ni{background:#000;color:#fff;padding:60px clamp(16px,4vw,56px)}" +
+    "#nalo-ingenieria .ni-in{max-width:1120px;margin:0 auto}" +
+    "#nalo-ingenieria .ni-h{text-align:center;font:800 clamp(22px,2.4vw,34px)/1.15 Poppins,sans-serif;letter-spacing:.01em;margin:0 auto 44px;max-width:22ch}" +
+    "#nalo-ingenieria .ni-body{display:grid;grid-template-columns:300px 1fr;gap:52px;align-items:center}" +
+    "#nalo-ingenieria .ni-foto{width:300px;aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:#222;flex:0 0 auto}" +
     "#nalo-ingenieria .ni-foto img{width:100%;height:100%;object-fit:cover}" +
-    "#nalo-ingenieria .ni-h{font:800 clamp(22px,2.4vw,34px)/1.15 Poppins,sans-serif;letter-spacing:.01em;margin:0 0 36px;max-width:20ch}" +
-    "#nalo-ingenieria .ni-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:36px}" +
+    "#nalo-ingenieria .ni-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:34px}" +
     "#nalo-ingenieria .ni-col img{width:44px;height:44px;object-fit:contain;margin-bottom:12px}" +
     "#nalo-ingenieria .ni-col b{display:block;font:700 16px/1.2 Poppins,sans-serif;margin-bottom:8px}" +
     "#nalo-ingenieria .ni-col p{font:400 13.5px/1.5 Poppins,sans-serif;color:#bdbdbd;margin:0}" +
     "#nalo-ingenieria .ni-cta{display:inline-block;background:#5200ff;color:#fff;font:700 14px/1 Poppins,sans-serif;letter-spacing:.05em;text-transform:uppercase;padding:16px 34px;border-radius:8px;text-decoration:none;transition:.15s}" +
     "#nalo-ingenieria .ni-cta:hover{filter:brightness(1.15)}" +
-    "@media(max-width:768px){#nalo-ingenieria .ni-in{grid-template-columns:1fr;gap:28px}#nalo-ingenieria .ni-cols{grid-template-columns:1fr;gap:22px;text-align:center}#nalo-ingenieria .ni-h{text-align:center;max-width:none}#nalo-ingenieria .ni{text-align:center}}";
+    "@media(max-width:768px){#nalo-ingenieria .ni-body{grid-template-columns:1fr;gap:28px;justify-items:center}#nalo-ingenieria .ni-cols{grid-template-columns:1fr;gap:22px;text-align:center}#nalo-ingenieria .ni-foto{width:240px}#nalo-ingenieria .ni{text-align:center}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
   var cols = COLS.map(function () {
@@ -35,10 +36,13 @@
   }).join("");
   mount.innerHTML =
     '<div class="ni"><div class="ni-in">' +
-      '<div class="ni-foto"><img src="' + A + 'ing-foto.webp" alt=""></div>' +
-      '<div class="ni-txt"><h2 class="ni-h">Ingeniería inteligente para el hombre moderno.</h2>' +
-        '<div class="ni-cols">' + cols + '</div>' +
-        '<a class="ni-cta" href="/productos">Potenciá tu día</a>' +
+      '<h2 class="ni-h">Ingeniería inteligente para el hombre moderno.</h2>' +
+      '<div class="ni-body">' +
+        '<div class="ni-foto"><img src="' + A + 'ing-foto.webp" alt=""></div>' +
+        '<div class="ni-txt">' +
+          '<div class="ni-cols">' + cols + '</div>' +
+          '<a class="ni-cta" href="/productos">Potenciá tu día</a>' +
+        '</div>' +
       '</div>' +
     '</div></div>';
 
