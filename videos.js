@@ -1,6 +1,6 @@
-/* Nalo · "Confiado por los argentinos" · carrusel de videos shoppable.
-   El video centrado se destaca (color + agrandado + reproduce muted); los demás se
-   agrisan y pausan. Al deslizar, el que queda centrado se destaca automáticamente.
+/* Nalo · "Confiado por los argentinos" · carrusel de videos shoppable INFINITO.
+   Loop en ambos sentidos (al llegar al último, reaparece el primero). El video
+   centrado se destaca (color + agrandado + reproduce muted); los demás grises.
    Card con thumbnail del producto. Todos -> Musculosa.
    Engancha: <div id="nalo-videos"></div><script src="...videos.js"></script> */
 (function () {
@@ -17,14 +17,16 @@
     thumb: BASE + "tech/postura.webp"
   };
   var VIDS = ["brandon", "juan", "fabri", "bigari"];
+  var N = VIDS.length;
+  var SEQ = VIDS.concat(VIDS).concat(VIDS); // 3 copias: set central = [N, 2N)
 
   var CSS = "" +
     "#nalo-videos .nv{max-width:1240px;margin:0 auto;padding:44px 0 60px}" +
     "#nalo-videos h2{text-align:center;font-weight:700;letter-spacing:.02rem;font-size:32px;margin:0 0 18px}" +
     "#nalo-videos h2 .v{color:#5200ff}" +
-    "#nalo-videos .nv-track{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:16px calc(50% - 150px);scroll-behavior:smooth;scrollbar-width:none}" +
+    "#nalo-videos .nv-track{display:flex;gap:26px;overflow-x:auto;padding:16px calc(50% - 150px);scrollbar-width:none}" +
     "#nalo-videos .nv-track::-webkit-scrollbar{display:none}" +
-    "#nalo-videos .nv-item{flex:0 0 300px;scroll-snap-align:center;transition:transform .35s cubic-bezier(.2,.7,.2,1),filter .35s;filter:grayscale(.85) brightness(.9) opacity(.6);transform:scale(.9)}" +
+    "#nalo-videos .nv-item{flex:0 0 300px;transition:transform .35s cubic-bezier(.2,.7,.2,1),filter .35s;filter:grayscale(.85) brightness(.9) opacity(.6);transform:scale(.9)}" +
     "#nalo-videos .nv-item.focus{filter:none;transform:scale(1.02)}" +
     "#nalo-videos .nv-vid{position:relative;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:#000;cursor:pointer;box-shadow:0 16px 40px rgba(0,0,0,.18)}" +
     "#nalo-videos .nv-vid video{width:100%;height:100%;object-fit:cover;display:block}" +
@@ -38,65 +40,91 @@
     "#nalo-videos .nv-card .promo{font-weight:700;color:#111;font-size:13px}" +
     "#nalo-videos .nv-card .old{color:#999;text-decoration:line-through;margin-left:5px;font-size:12px}" +
     "#nalo-videos .nv-card .add{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:#5200ff;color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px}" +
-    "#nalo-videos .nv-dots{display:flex;justify-content:center;gap:9px;margin-top:22px}" +
-    "#nalo-videos .nv-dots button{width:8px;height:8px;border-radius:50%;border:0;background:#d5d5d5;cursor:pointer;padding:0;transition:.2s}" +
-    "#nalo-videos .nv-dots button.on{background:#5200ff;width:22px;border-radius:5px}" +
-    "@media(max-width:768px){#nalo-videos .nv-track{padding:22px calc(50% - 130px)}#nalo-videos .nv-item{flex:0 0 260px}}";
+    "#nalo-videos .nv-nav{display:flex;justify-content:center;gap:16px;margin-top:22px}" +
+    "#nalo-videos .nv-nav button{width:44px;height:44px;border-radius:50%;border:1px solid #ddd;background:#fff;color:#111;font-size:20px;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center}" +
+    "#nalo-videos .nv-nav button:hover{background:#5200ff;border-color:#5200ff;color:#fff}" +
+    "@media(max-width:768px){#nalo-videos .nv-track{padding:16px calc(50% - 120px)}#nalo-videos .nv-item{flex:0 0 240px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
   var PLAY = '<div class="nv-play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>';
-  var items = VIDS.map(function (k) {
+  function itemHTML(k) {
     return '<div class="nv-item">' +
-      '<div class="nv-vid" data-k="' + k + '"><video preload="metadata" muted loop playsinline poster="' + CDN + k + '.jpg">' +
+      '<div class="nv-vid" data-k="' + k + '"><video preload="none" muted loop playsinline poster="' + CDN + k + '.jpg">' +
         '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + '</div>' +
       '<a class="nv-card" href="' + PROD_URL + '"><img src="' + PROD.thumb + '" alt="">' +
         '<div class="nm"><b>' + PROD.name + '</b><span class="pr"><span class="promo">' + PROD.promo +
         '</span><span class="old">' + PROD.old + '</span></span></div><span class="add">+</span></a>' +
     '</div>';
-  }).join("");
-  var dots = VIDS.map(function (_, i) { return '<button data-i="' + i + '"' + (i === 1 ? ' class="on"' : '') + '></button>'; }).join("");
+  }
 
   mount.innerHTML = '<div class="nv"><h2>Confiado por los <span class="v">argentinos</span></h2>' +
-    '<div class="nv-track">' + items + '</div><div class="nv-dots">' + dots + '</div></div>';
+    '<div class="nv-track">' + SEQ.map(itemHTML).join("") + '</div>' +
+    '<div class="nv-nav"><button class="prev" aria-label="Anterior">‹</button><button class="next" aria-label="Siguiente">›</button></div></div>';
 
   var track = mount.querySelector(".nv-track");
   var itemEls = [].slice.call(mount.querySelectorAll(".nv-item"));
-  var dotEls = [].slice.call(mount.querySelectorAll(".nv-dots button"));
+  var step = 0;          // ancho de un item incl. gap
   var current = -1;
 
-  function focusCentered() {
-    var c = track.getBoundingClientRect().left + track.clientWidth / 2;
+  function measure() {
+    if (itemEls.length > 1) step = itemEls[1].offsetLeft - itemEls[0].offsetLeft;
+  }
+  function centerIndex(i, smooth) {
+    var it = itemEls[i];
+    var target = it.offsetLeft - (track.clientWidth - it.offsetWidth) / 2;
+    track.scrollTo({ left: target, behavior: smooth ? "smooth" : "auto" });
+  }
+  function nearestIndex() {
+    var c = track.scrollLeft + track.clientWidth / 2;
     var best = 0, bestD = Infinity;
     itemEls.forEach(function (it, i) {
-      var r = it.getBoundingClientRect();
-      var d = Math.abs(r.left + r.width / 2 - c);
+      var d = Math.abs(it.offsetLeft + it.offsetWidth / 2 - c);
       if (d < bestD) { bestD = d; best = i; }
     });
-    if (best === current) return;
-    current = best;
-    itemEls.forEach(function (it, i) {
-      var on = i === best;
+    return best;
+  }
+  function focusOn(i) {
+    if (i === current) return;
+    current = i;
+    itemEls.forEach(function (it, j) {
+      var on = j === i;
       it.classList.toggle("focus", on);
       var v = it.querySelector("video"), vid = it.querySelector(".nv-vid");
       if (on) { v.play().catch(function () {}); vid.classList.add("on"); }
       else { v.pause(); vid.classList.remove("on"); }
     });
-    dotEls.forEach(function (d, i) { d.classList.toggle("on", i === best); });
   }
 
-  var raf;
+  var raf, settle;
   track.addEventListener("scroll", function () {
-    if (raf) return;
-    raf = requestAnimationFrame(function () { raf = null; focusCentered(); });
+    if (!raf) raf = requestAnimationFrame(function () { raf = null; focusOn(nearestIndex()); });
+    clearTimeout(settle);
+    settle = setTimeout(relocate, 120); // tras frenar, reposicionar al set central
   });
+
+  // Loop infinito: mantener el centrado dentro del set central [N, 2N)
+  function relocate() {
+    var i = nearestIndex();
+    if (i < N || i >= 2 * N) {
+      var mid = N + (((i % N) + N) % N);
+      var delta = (mid - i) * step;
+      track.scrollLeft += delta;      // salto sin animación
+      current = -1; focusOn(nearestIndex());
+    }
+  }
+
+  mount.querySelector(".prev").addEventListener("click", function () { centerIndex(nearestIndex() - 1, true); });
+  mount.querySelector(".next").addEventListener("click", function () { centerIndex(nearestIndex() + 1, true); });
   itemEls.forEach(function (it, i) {
-    it.querySelector(".nv-vid").addEventListener("click", function () {
-      it.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    });
+    it.querySelector(".nv-vid").addEventListener("click", function () { centerIndex(i, true); });
   });
-  dotEls.forEach(function (d, i) {
-    d.addEventListener("click", function () { itemEls[i].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" }); });
-  });
-  // arranque: centrar el SEGUNDO video (evita el hueco a la izquierda) y destacarlo
-  setTimeout(function () { itemEls[1].scrollIntoView({ inline: "center", block: "nearest" }); focusCentered(); }, 60);
+
+  // arranque: centrar el 2do del set central
+  function start() {
+    measure();
+    if (!step) { setTimeout(start, 80); return; }
+    centerIndex(N + 1, false);
+    focusOn(nearestIndex());
+  }
+  setTimeout(start, 80);
 })();
