@@ -17,7 +17,7 @@
 
   var CSS = "" +
     "#nalo-tecnologia .nt{max-width:1200px;margin:0 auto;padding:64px 24px}" +
-    "#nalo-tecnologia .nt-sub{font:600 13px/1 Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#999;margin:0 0 24px}" +
+    "#nalo-tecnologia .nt-sub{text-align:left;font:600 13px/1 Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#999;margin:0 0 24px}" +
     "#nalo-tecnologia .nt-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}" +
     "#nalo-tecnologia .nt-list{display:flex;flex-direction:column;gap:6px}" +
     "#nalo-tecnologia .nt-item{appearance:none;background:none;border:0;text-align:left;padding:12px 0;cursor:pointer;font-family:inherit}" +
