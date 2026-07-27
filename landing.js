@@ -22,8 +22,10 @@
       ]},
       { type: "instagram", title: "Miles de reseñas orgánicas", subtitle: "Más de 10 millones de visitas en Instagram",
         link: IG, videos: ["brandon", "juan", "fabri", "bigari"] },
-      { type: "gallery", title: "Cambio visible desde que te la ponés.", stat: "92%",
-        statTxt: "sintió la panza más firme y plana al ponerla.",
+      { type: "gallery", title: "Cambio visible desde que te la ponés.", highlight: "visible",
+        leftTitle: "Resultados reales validados por usuarios.", stat: "92%",
+        statTxt: "sintió la panza más firme y plana al ponerla",
+        note: "* Basado en encuesta a 150 usuarios. Los resultados pueden variar según el cuerpo y el talle elegido. Usar el talle recomendado por nuestra guía para máxima efectividad.",
         pairs: [ [B+"landings/musculosa/antes.webp", B+"landings/musculosa/despues.webp"],
                  [B+"landings/musculosa/a1.webp", B+"landings/musculosa/d1.webp"],
                  [B+"landings/musculosa/a2.webp", B+"landings/musculosa/d2.webp"] ] },
@@ -126,16 +128,21 @@
     "#nalo-landing .nl-ig .reel::-webkit-scrollbar{display:none}" +
     "#nalo-landing .nl-ig video{flex:0 0 220px;aspect-ratio:9/16;object-fit:cover;border-radius:14px;background:#000;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.12)}" +
     // gallery
-    "#nalo-landing .nl-gl-stat{text-align:center;margin:0 auto 26px;max-width:560px}" +
-    "#nalo-landing .nl-gl-stat b{display:block;font-size:52px;color:var(--v);font-weight:800;line-height:1}" +
-    "#nalo-landing .nl-gl-stat span{color:#555;font-size:15px}" +
-    "#nalo-landing .nl-gl-main{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:640px;margin:0 auto 16px}" +
-    "#nalo-landing .nl-gl-main figure{margin:0}" +
-    "#nalo-landing .nl-gl-main img{width:100%;border-radius:14px;display:block}" +
-    "#nalo-landing .nl-gl-main figcaption{text-align:center;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin-top:8px}" +
-    "#nalo-landing .nl-gl-main .d figcaption{color:var(--v)}" +
-    "#nalo-landing .nl-gl-thumbs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}" +
-    "#nalo-landing .nl-gl-thumbs button{width:56px;height:56px;border-radius:10px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:none}" +
+    "#nalo-landing .nl-gl{display:grid;grid-template-columns:1fr 1.35fr;gap:44px;align-items:center;max-width:1120px;margin:0 auto}" +
+    "#nalo-landing .nl-gl-left h3{font-size:28px;font-weight:800;line-height:1.15;margin:0 0 6px}" +
+    "#nalo-landing .nl-gl-left .pct{display:block;font-size:80px;font-weight:800;color:var(--v);line-height:1;margin:6px 0 4px}" +
+    "#nalo-landing .nl-gl-left .pct-txt{color:#555;font-size:16px;margin:0 0 20px}" +
+    "#nalo-landing .nl-gl-left hr{border:0;border-top:1px solid #e5e5e5;margin:0 0 16px}" +
+    "#nalo-landing .nl-gl-left .note{color:#999;font-size:12.5px;line-height:1.55;margin:0 0 24px}" +
+    "#nalo-landing .nl-gl-left .buy{display:inline-block;background:var(--v);color:#fff;font-weight:700;font-size:14px;letter-spacing:.05em;text-transform:uppercase;padding:17px 42px;border:0;border-radius:40px;cursor:pointer}" +
+    "#nalo-landing .nl-gl-right{display:grid;grid-template-columns:1fr 1fr 72px;gap:12px;align-items:start}" +
+    "#nalo-landing .nl-gl-right figure{position:relative;margin:0}" +
+    "#nalo-landing .nl-gl-right figure img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;display:block}" +
+    "#nalo-landing .nl-gl-right .pill{position:absolute;left:10px;bottom:10px;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;color:#fff}" +
+    "#nalo-landing .nl-gl-right .pill.dark{background:#111}" +
+    "#nalo-landing .nl-gl-right .pill.vio{background:var(--v)}" +
+    "#nalo-landing .nl-gl-thumbs{display:flex;flex-direction:column;gap:8px}" +
+    "#nalo-landing .nl-gl-thumbs button{width:72px;height:56px;border-radius:8px;overflow:hidden;border:2px solid transparent;padding:0;cursor:pointer;background:none}" +
     "#nalo-landing .nl-gl-thumbs button.on{border-color:var(--v)}" +
     "#nalo-landing .nl-gl-thumbs img{width:100%;height:100%;object-fit:cover;display:block}" +
     // compare
@@ -174,7 +181,8 @@
     "#nalo-landing .nl-feat{background:#f7f7f8;border-radius:16px;padding:24px}" +
     "#nalo-landing .nl-feat b{display:block;font-size:16px;margin-bottom:8px}" +
     "#nalo-landing .nl-feat p{margin:0;font-size:13.5px;line-height:1.55;color:#666}" +
-    "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl-main,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:25px}#nalo-landing .nl-ts h2{text-align:center;font-size:24px}}";
+    "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:25px}#nalo-landing .nl-ts h2{text-align:center;font-size:24px}" +
+    "#nalo-landing .nl-gl-right{order:1}#nalo-landing .nl-gl-left{order:2;text-align:center}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-right{grid-template-columns:1fr 1fr 56px}#nalo-landing .nl-gl-left .pct{font-size:64px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
   var CHECK = '<svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>';
@@ -197,14 +205,27 @@
         '<div class="reel" data-reel="' + idx + '">' + reel + '</div></section>';
     }
     if (t === "gallery") {
+      var titleH = sec.highlight
+        ? esc(sec.title).replace(esc(sec.highlight), '<span class="v">' + esc(sec.highlight) + '</span>')
+        : esc(sec.title);
       var thumbs = sec.pairs.map(function (p, i) {
         return '<button data-i="' + i + '"' + (i === 0 ? ' class="on"' : '') + '><img src="' + p[1] + '" alt=""></button>';
       }).join("");
-      return '<section class="nl-sec" data-gallery="' + idx + '"><h2 class="nl-h">' + esc(sec.title) + '</h2>' +
-        '<div class="nl-gl-stat"><b>' + esc(sec.stat) + '</b><span>' + esc(sec.statTxt) + '</span></div>' +
-        '<div class="nl-gl-main"><figure class="a"><img class="ga" src="' + sec.pairs[0][0] + '" alt="Antes"><figcaption>Antes</figcaption></figure>' +
-        '<figure class="d"><img class="gd" src="' + sec.pairs[0][1] + '" alt="Después"><figcaption>Después</figcaption></figure></div>' +
-        '<div class="nl-gl-thumbs">' + thumbs + '</div></section>';
+      return '<section class="nl-sec" data-gallery="' + idx + '"><h2 class="nl-h">' + titleH + '</h2>' +
+        '<div class="nl-gl">' +
+          '<div class="nl-gl-left">' +
+            '<h3>' + esc(sec.leftTitle) + '</h3>' +
+            '<b class="pct">' + esc(sec.stat) + '</b>' +
+            '<p class="pct-txt">' + esc(sec.statTxt) + '</p><hr>' +
+            '<p class="note">' + esc(sec.note) + '</p>' +
+            '<button class="buy">Comprar ahora</button>' +
+          '</div>' +
+          '<div class="nl-gl-right">' +
+            '<figure><img class="ga" src="' + sec.pairs[0][0] + '" alt="Antes"><span class="pill dark">Antes</span></figure>' +
+            '<figure><img class="gd" src="' + sec.pairs[0][1] + '" alt="Después"><span class="pill vio">Después</span></figure>' +
+            '<div class="nl-gl-thumbs">' + thumbs + '</div>' +
+          '</div>' +
+        '</div></section>';
     }
     if (t === "compare") {
       var head = '<tr><th></th>' + sec.cols.map(function (c, i) { return '<th class="' + (i === 0 ? "brand" : "") + '">' + esc(c) + '</th>'; }).join("") + '</tr>';
@@ -242,6 +263,8 @@
     var idx = +g.getAttribute("data-gallery");
     var pairs = secs[idx].pairs;
     var ga = g.querySelector(".ga"), gd = g.querySelector(".gd");
+    var buy = g.querySelector(".buy");
+    if (buy) buy.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
     g.querySelectorAll(".nl-gl-thumbs button").forEach(function (b) {
       b.addEventListener("click", function () {
         var i = +b.getAttribute("data-i");
