@@ -35,7 +35,7 @@
                 ["Corrige la postura",1,0,0,1], ["Transpirable y cómoda",1,0,1,0],
                 ["Apta para uso diario y deporte",1,0,1,0], ["Disimula pecho",1,0,0,0],
                 ["Doble capa de compresión",1,0,0,0] ]},
-      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/musculosa/tec/gif.gif", items: [
+      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/musculosa/tec/media.webp", items: [
         ["Abdomen Plano Al Instante", "Doble capa de compresión en la zona abdominal que reduce visualmente hasta 2 talles desde el primer uso. Disimula el abdomen y el tejido adiposo del pecho sin esfuerzo.", B+"landings/musculosa/tec/ic0.png"],
         ["Postura Erguida Y Confiada", "El entramado posterior ejerce una tracción ligera que alinea tus hombros y columna, corrigiendo la postura encorvada del escritorio o el celular.", B+"landings/musculosa/tec/ic1.png"],
         ["Invisible Bajo La Ropa", "Costuras planas y corte seamless. No se marca bajo camisas, remeras ni ropa deportiva. Nadie nota que la llevás puesta.", B+"landings/musculosa/tec/ic2.png"],
@@ -93,27 +93,47 @@
     ],
 
     "pantalon-antiarrugas-nalo": [
-      { type: "techsplit", title: "La tela hace el trabajo, vos no", media: "",
-        items: [
-          ["Impecable Sin Planchar", "Las fibras de poliéster tienen memoria: se doblan pero recuerdan su forma. A las seis de la tarde, tras ocho horas sentado, el pantalón está igual que a la mañana."],
-          ["Repele Líquidos Y Manchas", "La tela repele el agua y las salpicaduras: los líquidos resbalan sin penetrar. Un café o gaseosa que se vuelca se limpia con una servilleta."],
-          ["Estructura Que No Se Deforma", "El 95% de poliéster de alta densidad sostiene el pliegue, la caída de la pierna y la forma de la rodilla. Nadie nota que es elástico. Vos sí."],
-          ["Elasticidad En 4 Direcciones", "El spandex está tejido a lo largo y a lo ancho. Te agachás, cruzás la pierna, subís escaleras de a dos. El pantalón te sigue y vuelve solo a su lugar."],
-          ["Comodidad De Ocho Horas", "Cintura elastizada oculta y un tiro calculado para estar sentado. Llegás a casa y no es lo primero que te sacás."],
-          ["Lavable A Máquina", "El poliéster no encoge, no destiñe y no pierde la forma. Lavarropas en frío, colgar, listo. Nunca más tintorería ni plancha."]
-        ]},
-      { type: "compare", title: "Por qué el Pantalón Nalo gana",
-        cols: ["Pantalón Nalo", "De vestir clásico", "Chino de algodón", "Deportivo"],
-        rows: [ ["No se arruga (sin plancha)",1,0,0,1], ["Repele líquidos y manchas",1,0,0,0],
-                ["Elástico en 4 direcciones",1,0,0,1], ["Mantiene la forma todo el día",1,1,0,0],
-                ["Lavable en casa, sin tintorería",1,0,1,1], ["Formal y casual a la vez",1,1,1,0] ]},
+      { type: "gallery", title: "Todo el día encima. Cero arrugas", highlight: "Cero arrugas",
+        leftTitle: "Resultados reales validados por usuarios.", stat: "93%",
+        statTxt: "confirmó que el pantalón se mantuvo sin arrugas después de un día completo de uso.",
+        beforeLabel: "Otro pantalón", afterLabel: "Pantalón Nalo",
+        note: "* Basado en encuesta interna a más de 80 clientes verificados. Los resultados pueden variar según el uso. La tela libera las arrugas naturalmente y no requiere plancha.",
+        pairs: [ [B+"landings/pantalon/gallery/a2.jpg", B+"landings/pantalon/gallery/d2.jpg"],
+                 [B+"landings/pantalon/gallery/a3.jpg", B+"landings/pantalon/gallery/d3.jpg"],
+                 [B+"landings/pantalon/gallery/a6.jpg", B+"landings/pantalon/gallery/d6.jpg"],
+                 [B+"landings/pantalon/gallery/a4.jpg", B+"landings/pantalon/gallery/d4.jpg"],
+                 [B+"landings/pantalon/gallery/a1.jpg", B+"landings/pantalon/gallery/d1.jpg"],
+                 [B+"landings/pantalon/gallery/a5.jpg", B+"landings/pantalon/gallery/d5.jpg"] ] },
+      { type: "techsplit", title: "La tela hace el trabajo, vos no", media: B+"landings/pantalon/tec/media.mp4", items: [
+        ["Impecable Sin Planchar", "Las fibras de poliéster tienen memoria: se doblan, pero recuerdan su forma. Por eso a las seis de la tarde, después de ocho horas sentado, te parás y el pantalón está igual que a la mañana. Sin la marca del asiento atrás de la rodilla.", B+"landings/pantalon/tec/ic0.png"],
+        ["Repele Líquidos Y Manchas", "La tela repele el agua y las salpicaduras: los líquidos resbalan sin penetrar en vez de absorberse. Un café o una gaseosa que se vuelca se limpia con una servilleta, sin dejar mancha.", B+"landings/pantalon/tec/ic1.png"],
+        ["Estructura Que No Se Deforma", "Elástico no quiere decir blando. El 95% de poliéster de alta densidad sostiene el pliegue, la caída de la pierna y la forma de la rodilla. Nadie en la oficina va a notar que es elástico. Vos sí.", B+"landings/pantalon/tec/ic2.png"],
+        ["Elasticidad En 4 Direcciones", "El spandex está tejido en las dos direcciones de la tela, a lo largo y a lo ancho. Te agachás a atarte los cordones sin pensarlo, cruzás la pierna en la reunión, subís las escaleras de a dos. El pantalón te sigue y vuelve solo a su lugar.", B+"landings/pantalon/tec/ic3.png"],
+        ["Comodidad De Ocho Horas", "Cintura elastizada oculta, y un tiro calculado para estar sentado, no solo para estar parado. Llegás a casa y no es lo primero que hacés sacártelo.", B+"landings/pantalon/tec/ic4.png"],
+        ["Lavable A Máquina", "El poliéster no encoge, no destiñe y no pierde la forma en el agua. Lavarropas en frío, colgar, listo. Nunca más una boleta de tintorería, nunca más una plancha un domingo a la noche.", B+"landings/pantalon/tec/ic5.png"],
+        ["Un Pantalón Para Todo El Día", "Reunión a la mañana, almuerzo con clientes, cena a la noche. Con saco es formal, con remera y zapatillas es un pantalón más. No tenés que pasar por casa a cambiarte.", B+"landings/pantalon/tec/ic6.png"]
+      ]},
+      { type: "compare", title: "Por Qué Nalo Gana:", highlight: "Nalo Gana:", subtitle: "Ingeniería textil real.",
+        logo: B+"landings/pantalon/cmp/logo.png",
+        images: [B+"landings/pantalon/cmp/col0.png", B+"landings/pantalon/cmp/col1.png", B+"landings/pantalon/cmp/col2.png", B+"landings/pantalon/cmp/col3.png"],
+        cols: ["", "De vestir clásico", "Chino de algodón", "Jogger elegante"],
+        rows: [ ["No necesita plancha",1,0,0,1], ["Se ve formal",1,1,2,0],
+                ["Elasticidad en 4 direcciones",1,0,0,1], ["Repele líquidos y manchas",1,0,0,0],
+                ["Mantiene la forma lavado tras lavado",1,2,0,0], ["Lavable a máquina",1,0,1,1],
+                ["Cero costo de tintorería",1,0,1,1], ["Sirve de la oficina a la noche",1,0,2,0] ]},
+      { type: "stats", title: "Creados para ser distintos. A propósito.",
+        note: "Basado en una encuesta a más de 80 clientes verificados.",
+        items: [ ["96%","Afirma que son más cómodos que sus antiguos pantalones de vestir."],
+                 ["86%","De los clientes los usa al menos 5 días a la semana."],
+                 ["90%","Clientes recomiendan el Pantalón Antiarrugas Nalo a un amigo."] ]},
       { type: "faq", title: "Preguntas frecuentes", items: [
-        ["¿Se va a notar que no son pantalones de vestir comunes?", "No. De frente, de costado y de atrás son un pantalón de vestir. Nadie en la oficina va a ver la diferencia. Vos sí, cuando llegue la tarde."],
-        ["¿Realmente no se arrugan?", "No necesitan plancha: la tela libera las arrugas sola cuando el pantalón vuelve a colgar. Ocho horas sentado, un vuelo, doblado en la valija: te parás y está liso."],
-        ["¿Es cierto que repele los líquidos?", "Sí. En vez de absorberse, los líquidos quedan sobre la superficie y resbalan. Un derrame de café o gaseosa se limpia con una servilleta."],
-        ["¿Qué talle pido?", "Si estás entre dos, pedí el más grande. La tela tiene tanto elástico que un poco de más nunca es problema. La tabla está en la última foto del producto."],
-        ["¿Sirven para un evento formal, un casamiento?", "Sí. Con saco y zapatos de vestir es un pantalón de traje. Y es con el que vas a estar sentado seis horas sin querer sacártelo."],
-        ["¿Cómo los lavo?", "Lavarropas en agua fría, colgado a secar. No se planchan, no van a la tintorería, no encogen y no destiñen."]
+        ["¿Se van a notar que no son pantalones de vestir comunes?", "No. De frente, de costado y de atrás son un pantalón de vestir. Nadie en la oficina va a ver la diferencia. Vos sí, cuando llegue la tarde."],
+        ["¿Realmente no se arrugan?", "No necesitan plancha. La tela libera las arrugas sola cuando el pantalón vuelve a colgar. Ocho horas sentado, un vuelo, cuatro horas doblado en la valija: te parás y está liso. No hace magia — si lo dejás hecho un bollo en el piso una semana, va a tener marcas."],
+        ["¿Es cierto que repele los líquidos?", "Sí. La tela repele el agua y las salpicaduras: en vez de absorberse, los líquidos quedan sobre la superficie y resbalan. Un derrame accidental de café o gaseosa se limpia con una servilleta."],
+        ["¿Qué talle pido?", "Si estás entre dos, pedí el más grande. La tela tiene tanto elástico que un poco de más nunca es problema, pero un talle chico te va a pelear todo el día. Encontrás la tabla de talle en la última foto del producto."],
+        ["¿Sirven para un evento formal, un casamiento?", "Sí. Con saco y zapatos de vestir es un pantalón de traje. También es el pantalón con el que vas a estar sentado seis horas en la fiesta sin querer sacártelo."],
+        ["¿Cómo los lavo?", "Lavarropas en agua fría, colgado a secar. Nada más. No se planchan, no van a la tintorería, no encogen y no destiñen."],
+        ["¿Cuánto tardan en llegar?", "El pedido se despacha en las primeras 24 horas hábiles. El envío demora, luego de ser despachado, de 24 a 48hs en CABA y de 2 a 6 días hábiles al resto del país."]
       ]}
     ]
   };
@@ -187,7 +207,7 @@
     // techsplit
     "#nalo-landing .nl-ts{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1100px;margin:0 auto}" +
     "#nalo-landing .nl-ts-media{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#f2f2f4}" +
-    "#nalo-landing .nl-ts-media img{width:100%;height:100%;object-fit:cover}" +
+    "#nalo-landing .nl-ts-media img,#nalo-landing .nl-ts-media video{width:100%;height:100%;object-fit:cover}" +
     "#nalo-landing .nl-ts h2{text-align:left;font-size:40px;font-weight:700;margin:0 0 22px}" +
     "#nalo-landing .nl-ts details{border-bottom:1px solid #eee}" +
     "#nalo-landing .nl-ts summary{list-style:none;cursor:pointer;padding:14px 0;font-weight:600;font-size:15px;display:flex;align-items:center;gap:10px}" +
@@ -205,7 +225,8 @@
     "#nalo-landing .nl-pr-media img{width:100%;height:100%;object-fit:cover}" +
     "#nalo-landing .nl-pr-txt h2{text-align:left;font-size:40px;font-weight:700;margin:0 0 18px}" +
     "#nalo-landing .nl-pr-txt p{font-size:14px;line-height:1.6;color:#555;margin:0 0 14px}" +
-    "#nalo-landing .nl-pr-btn{margin-top:8px}" +
+    "#nalo-landing .nl-pr-btn{margin-top:10px;display:inline-block;background:var(--v);color:#fff;font-weight:700;font-size:14px;letter-spacing:.05em;text-transform:uppercase;padding:17px 42px;border:0;border-radius:40px;cursor:pointer;transition:.15s}" +
+    "#nalo-landing .nl-pr-btn:hover{filter:brightness(1.1)}" +
     // stats
     "#nalo-landing .nl-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;margin:0 auto}" +
     "#nalo-landing .nl-stat{text-align:center}" +
@@ -291,7 +312,11 @@
         var icon = i[2] ? '<img class="ts-ic" src="' + i[2] + '" alt="">' : '<span class="ic">' + CHECK + '</span>';
         return '<details><summary>' + icon + '<span class="t">' + esc(i[0]) + '</span></summary><p>' + esc(i[1]) + '</p></details>';
       }).join("");
-      var media = sec.media ? '<div class="nl-ts-media"><img src="' + sec.media + '" alt=""></div>' : '<div class="nl-ts-media"></div>';
+      var mInner = "";
+      if (sec.media) mInner = /\.(mp4|webm)$/i.test(sec.media)
+        ? '<video src="' + sec.media + '" autoplay muted loop playsinline preload="metadata"></video>'
+        : '<img src="' + sec.media + '" alt="">';
+      var media = '<div class="nl-ts-media">' + mInner + '</div>';
       return '<section class="nl-sec"><div class="nl-ts">' + media + '<div><h2>' + esc(sec.title) + '</h2>' + acc + '</div></div></section>';
     }
     if (t === "stats") {
@@ -323,6 +348,41 @@
     vs.src = B + "videos.js";
     document.body.appendChild(vs);
   }
+
+  // apertura/cierre suave de todos los desplegables (landing + ficha del producto)
+  function smoothDetails(d) {
+    var sum = d.querySelector("summary");
+    var body = d.querySelector(":scope > *:not(summary)");
+    if (!sum || !body || d.dataset.smooth) return;
+    d.dataset.smooth = "1";
+    body.style.overflow = "hidden";
+    body.style.willChange = "height,opacity";
+    if (!d.open) { body.style.height = "0px"; body.style.opacity = "0"; }
+    sum.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (d.animating) return;
+      d.animating = true;
+      var opening = !d.open;
+      if (opening) d.open = true;
+      var start = opening ? 0 : body.scrollHeight;
+      var end = opening ? body.scrollHeight : 0;
+      body.style.transition = "none";
+      body.style.height = start + "px"; body.style.opacity = opening ? "0" : "1";
+      requestAnimationFrame(function () {
+        body.style.transition = "height .32s ease, opacity .32s ease";
+        body.style.height = end + "px"; body.style.opacity = opening ? "1" : "0";
+      });
+      var done = function () {
+        body.removeEventListener("transitionend", done);
+        if (opening) { body.style.height = "auto"; }
+        else { d.open = false; }
+        body.style.transition = ""; d.animating = false;
+      };
+      body.addEventListener("transitionend", done);
+    });
+  }
+  mount.querySelectorAll("details").forEach(smoothDetails);
+  document.querySelectorAll("details.nalo-acc").forEach(smoothDetails);
 
   // galería antes/después seleccionable
   mount.querySelectorAll("[data-gallery]").forEach(function (g) {
