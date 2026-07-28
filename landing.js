@@ -354,9 +354,14 @@
   // apertura/cierre suave de todos los desplegables (landing + ficha del producto)
   function smoothDetails(d) {
     var sum = d.querySelector("summary");
-    var body = d.querySelector(":scope > *:not(summary)");
-    if (!sum || !body || d.dataset.smooth) return;
+    if (!sum || d.dataset.smooth) return;
     d.dataset.smooth = "1";
+    // envolver TODO el contenido posterior al summary en un wrapper y animarlo junto
+    var body = document.createElement("div");
+    body.className = "nl-dwrap";
+    var n = sum.nextSibling;
+    while (n) { var nx = n.nextSibling; body.appendChild(n); n = nx; }
+    d.appendChild(body);
     body.style.overflow = "hidden";
     body.style.willChange = "height,opacity";
     if (!d.open) { body.style.height = "0px"; body.style.opacity = "0"; }
