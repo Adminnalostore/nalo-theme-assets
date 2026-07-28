@@ -23,6 +23,7 @@
 
   var CSS = "" +
     "#nalo-videos .nv{max-width:1240px;margin:0 auto;padding:44px 0 60px}" +
+    "#nalo-videos[data-bare='1'] .nv{padding:22px 0 0}" +
     "#nalo-videos h2{text-align:center;font-weight:700;letter-spacing:.02rem;font-size:32px;margin:0 0 18px}" +
     "#nalo-videos h2 .v{color:#5200ff}" +
     "#nalo-videos .nv-track{display:flex;gap:26px;overflow-x:auto;padding:16px calc(50% - 150px);scrollbar-width:none}" +

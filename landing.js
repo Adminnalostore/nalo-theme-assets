@@ -106,7 +106,7 @@
 
   var CSS = "" +
     "#nalo-landing{--v:#5200ff;font-family:Poppins,sans-serif;color:#111}" +
-    "#nalo-landing .nl-sec{max-width:1160px;margin:0 auto;padding:52px 24px}" +
+    "#nalo-landing .nl-sec{max-width:1160px;margin:0 auto;padding:26px 24px}" +
     "#nalo-landing .nl-h{text-align:center;font-weight:700;font-size:40px;letter-spacing:.02rem;margin:0 0 34px}" +
     "#nalo-landing .nl-h .v{color:var(--v)}" +
     // accordion / faq
