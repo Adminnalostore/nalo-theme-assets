@@ -106,7 +106,7 @@
 
   var CSS = "" +
     "#nalo-landing{--v:#5200ff;font-family:Poppins,sans-serif;color:#111}" +
-    "#nalo-landing .nl-sec{max-width:1160px;margin:0 auto;padding:26px 24px}" +
+    "#nalo-landing .nl-sec{max-width:1160px;margin:0 auto;padding:40px 24px}" +
     "#nalo-landing .nl-h{text-align:center;font-weight:700;font-size:40px;letter-spacing:.02rem;margin:0 0 34px}" +
     "#nalo-landing .nl-h .v{color:var(--v)}" +
     // accordion / faq
@@ -121,7 +121,7 @@
     "#nalo-landing .nl-ac summary span{flex:1}" +
     "#nalo-landing .nl-ac p{margin:0 4px 16px;font-size:14px;line-height:1.6;color:#666}" +
     // instagram
-    "#nalo-landing .nl-ig{text-align:center}" +
+    "#nalo-landing .nl-ig{text-align:center;padding-top:26px}" +
     "#nalo-landing .nl-ig-btnwrap{display:flex;justify-content:center;margin-top:4px}" +
     "#nalo-landing .nl-ig-btn{display:inline-block;padding:2px;border-radius:999px;background:linear-gradient(90deg,#f58529 0%,#dd2a7b 50%,#8134af 100%);text-decoration:none;transition:transform .3s}" +
     "#nalo-landing .nl-ig-btn:hover{transform:translateY(-2px) scale(1.03)}" +
