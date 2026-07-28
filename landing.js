@@ -141,7 +141,7 @@
 
     "camisa-hombre-nalo-impermeable-antiarrugas-manga-larga": [
       { type: "instagram", title: "Miles de reseñas orgánicas", subtitle: "Más de 10 millones de visitas en Instagram",
-        link: IG, videos: ["brandon", "juan", "fabri", "bigari"] },
+        link: IG, videos: ["c1", "c2", "c3", "c4"], vidBase: "landings/camisa/videos/" },
       { type: "gallery", title: "Cambio visible desde que te la ponés.", highlight: "visible",
         leftTitle: "Resultados reales validados por usuarios.", stat: "96%",
         statTxt: "confirmó que su camisa se mantuvo sin arrugas y sin manchas durante todo el día.",
