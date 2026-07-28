@@ -12,13 +12,15 @@
 
   var S = document.currentScript || document.querySelector('script[src*="videos.js"]');
   var BASE = S.src.replace(/videos\.js.*$/, "");
-  var CDN = BASE + "videos/";
+  var vidbase = mount.getAttribute("data-vidbase"); // subpath opcional (ej. landings/pantalon/videos/)
+  var vidsAttr = mount.getAttribute("data-vids");   // lista opcional de nombres separados por coma
+  var CDN = BASE + (vidbase || "videos/");
   var PROD_URL = "https://tiendadeadmin14.mitiendanube.com/productos/musculosa-reductora-2-0-nalo/";
   var PROD = {
     name: "Musculosa Reductora", promo: "$59.900", old: "$119.800",
     thumb: BASE + "tech/postura.webp"
   };
-  var VIDS = ["brandon", "juan", "fabri", "bigari"];
+  var VIDS = vidsAttr ? vidsAttr.split(",") : ["brandon", "juan", "fabri", "bigari"];
   var N = VIDS.length;
   var SEQ = VIDS.concat(VIDS).concat(VIDS); // 3 copias: set central = [N, 2N)
 

@@ -94,7 +94,7 @@
 
     "pantalon-antiarrugas-nalo": [
       { type: "instagram", title: "Miles de reseñas orgánicas", subtitle: "Más de 10 millones de visitas en Instagram",
-        link: IG, noSound: true, videos: ["brandon", "juan", "fabri", "bigari"] },
+        link: IG, noSound: true, videos: ["p1", "p2", "p3"], vidBase: "landings/pantalon/videos/" },
       { type: "gallery", title: "Todo el día encima. Cero arrugas", highlight: "Cero arrugas",
         leftTitle: "Resultados reales validados por usuarios.", stat: "93%",
         statTxt: "confirmó que el pantalón se mantuvo sin arrugas después de un día completo de uso.",
@@ -262,7 +262,9 @@
         '<h2 class="nl-h">' + esc(sec.title) + '</h2>' +
         '<div class="nl-ig-btnwrap"><a class="nl-ig-btn" href="' + sec.link + '" target="_blank" rel="noopener">' +
           '<span class="nl-ig-inner">' + IGICON + '<span>' + esc(sec.subtitle) + '</span></span></a></div>' +
-        '<div id="nalo-videos" data-bare="1"' + (sec.noSound ? ' data-nosound="1"' : '') + '></div>' +
+        '<div id="nalo-videos" data-bare="1"' + (sec.noSound ? ' data-nosound="1"' : '') +
+          (sec.videos ? ' data-vids="' + sec.videos.join(",") + '"' : '') +
+          (sec.vidBase ? ' data-vidbase="' + sec.vidBase + '"' : '') + '></div>' +
       '</section>';
     }
     if (t === "gallery") {
