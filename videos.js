@@ -8,6 +8,7 @@
   if (!mount || mount.dataset.done) return;
   mount.dataset.done = "1";
   var bare = mount.getAttribute("data-bare") === "1"; // solo videos, sin título ni cards
+  var noSound = mount.getAttribute("data-nosound") === "1"; // sin botón de sonido (siempre mudos)
 
   var S = document.currentScript || document.querySelector('script[src*="videos.js"]');
   var BASE = S.src.replace(/videos\.js.*$/, "");
@@ -65,7 +66,7 @@
       '</span><span class="old">' + PROD.old + '</span></span></div><span class="add">+</span></a>';
     return '<div class="nv-item">' +
       '<div class="nv-vid" data-k="' + k + '"><video preload="none" muted loop playsinline poster="' + CDN + k + '.jpg">' +
-        '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + SOUND + '</div>' + card +
+        '<source src="' + CDN + k + '.mp4" type="video/mp4"></video>' + PLAY + (noSound ? "" : SOUND) + '</div>' + card +
     '</div>';
   }
 
