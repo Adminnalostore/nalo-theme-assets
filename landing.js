@@ -51,25 +51,44 @@
     ],
 
     "coolbamboo-pack-de-4-boxers-de-tela-de-bambu": [
-      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: "",
-        items: [
-          ["Bambú, No Algodón", "El algodón absorbe la humedad y se queda con ella. El bambú la toma y la evapora: absorbe hasta 70% más y se seca solo. Una de las fibras más suaves, regula la temperatura sola."],
-          ["Frescura Que Dura", "El olor lo hacen las bacterias que crecen en la humedad. El bambú no la retiene, así que no tienen dónde crecer. Doce horas afuera y seguís sintiéndote recién cambiado."],
-          ["Ventilación Donde Hace Falta", "Tejido abierto en el panel de bambú: el aire circula justo en la zona donde más calor se acumula."],
-          ["Cero Fricción", "Costuras planas y el tacto sedoso del bambú. Sin roces, sin marcas, sin acomodarte cada dos cuadras."],
-          ["Elasticidad Que Vuelve", "Se estira en cuatro direcciones y recupera la forma. No se estaquea ni se deforma después de tres lavados."],
-          ["Calce A Medida", "Diseño anatómico con soporte donde lo necesitás y cintura antienrolle que no se dobla ni aprieta."]
+      { type: "gallery", title: "Cambio visible desde que te lo ponés.", highlight: "visible",
+        leftTitle: "Resultados reales validados por usuarios.", stat: "91%",
+        statTxt: "lo prefirió a su boxer de algodón después de probar los dos.",
+        beforeLabel: "Boxer común", afterLabel: "CoolBamboo",
+        note: "* Estudio propio con 112 participantes, comparación directa contra boxer de algodón. Los resultados pueden variar según el uso.",
+        pairs: [ [B+"landings/boxer/gallery/a4.jpg", B+"landings/boxer/gallery/d4.jpg"],
+                 [B+"landings/boxer/gallery/a2.jpg", B+"landings/boxer/gallery/d2.jpg"],
+                 [B+"landings/boxer/gallery/a3.jpg", B+"landings/boxer/gallery/d3.jpg"],
+                 [B+"landings/boxer/gallery/a5.jpg", B+"landings/boxer/gallery/d5.jpg"],
+                 [B+"landings/boxer/gallery/a1.jpg", B+"landings/boxer/gallery/d1.jpg"] ] },
+      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/boxer/tec/media.webp", items: [
+        ["Bambú, No Algodón", "El algodón absorbe la humedad y se queda con ella todo el día. El bambú la toma y la evapora: absorbe hasta 70% más y se seca solo. Es una de las fibras más suaves que existen y regula la temperatura sola — fresco cuando hace calor, sin ese frío húmedo cuando baja.", B+"landings/boxer/tec/ic0.png"],
+        ["Frescura Que Dura", "El olor no lo hace la tela: lo hacen las bacterias que crecen en la humedad. El bambú no la retiene, así que no tienen dónde crecer. Doce horas afuera y seguís sintiéndote recién cambiado.", B+"landings/boxer/tec/ic1.png"],
+        ["Ventilación Donde Hace Falta", "Tejido abierto en el panel de bambú: el aire circula justo en la zona donde más calor se acumula. No es ventilación decorativa, está puesta donde el problema existe.", B+"landings/boxer/tec/ic2.png"],
+        ["Cero Fricción", "Costuras planas y el tacto sedoso del bambú, una de las fibras más suaves que existen. Sin roces, sin marcas, sin acomodarte cada dos cuadras.", B+"landings/boxer/tec/ic3.png"],
+        ["Elasticidad Que Vuelve", "Se estira en cuatro direcciones y recupera la forma. No se estaquea, no queda colgando, no se deforma después de tres lavados.", B+"landings/boxer/tec/ic4.png"],
+        ["Calce A Medida", "Diseño anatómico con soporte donde lo necesitás y cintura antienrolle que no se dobla ni aprieta.", B+"landings/boxer/tec/ic5.png"]
+      ]},
+      { type: "compare", title: "Por Qué Nalo Gana:", highlight: "Nalo Gana:", subtitle: "Bambú + ingeniería textil.",
+        logo: B+"landings/boxer/cmp/logo.png",
+        images: [B+"landings/boxer/cmp/col0.png", B+"landings/boxer/cmp/col1.png", B+"landings/boxer/cmp/col2.png", B+"landings/boxer/cmp/col3.png"],
+        cols: ["", "Algodón", "Algodón con lycra", "Deportivo"],
+        rows: [ ["No se deforma después de meses de uso",1,0,0,2], ["Cintura que no se enrolla ni marca",1,2,1,0],
+                ["Absorbe la humedad y la evapora (fibra de bambú)",1,0,0,2], ["Sin bolitas ni pelusa con el uso",1,0,0,1],
+                ["Se acomoda solo, no se sube al muslo",1,0,0,0], ["No te queda olor al final del día",1,0,0,0],
+                ["Suave al tacto, sin sensación de plástico",1,1,1,0] ]},
+      { type: "prose", title: "Mirálo de cerca. Ahí está la diferencia.", media: B+"landings/boxer/prose/collage.jpg", mediaRight: true, button: "COMPRAR AHORA",
+        paragraphs: [
+          "El vapor la atraviesa sin quedarse. Empapala y vas a ver cuánta agua retiene: el bambú absorbe hasta 70% más humedad que el algodón, y después la evapora en vez de dejarla contra tu piel.",
+          "El tejido va perforado —miles de micro-aberturas— para que el aire circule todo el día. Y aunque se estira en cuatro direcciones, no pierde ni un poco de ventilación.",
+          "No hay tratamiento químico ni tecnología secreta. Es una fibra mejor, tejida exactamente donde más la necesitás."
         ]},
-      { type: "compare", title: "Por qué el Boxer Nalo gana",
-        cols: ["Boxer Nalo", "Algodón", "Algodón con lycra", "Deportivo"],
-        rows: [ ["Absorbe y evapora la humedad",1,0,0,1], ["Antiolor durante todo el día",1,0,0,0],
-                ["Ventilación en la zona",1,0,0,1], ["No se deforma con el uso",1,0,1,1],
-                ["Cintura que no se enrolla",1,0,0,0], ["Suavidad sin fricción",1,1,1,0] ]},
       { type: "faq", title: "Preguntas frecuentes", items: [
-        ["¿Qué es la fibra de bambú y por qué se usa en los boxers?", "Es un material natural apreciado por ser suave, transpirable y respetuoso con el medio ambiente. Da un confort óptimo y promueve una mejor higiene íntima."],
-        ["¿En qué se diferencia la transpirabilidad del bambú?", "Permite que el aire circule, reduciendo la humedad y la transpiración. Te sentís cómodo y fresco sin importar tu actividad."],
-        ["¿Cómo se compara la durabilidad con un boxer tradicional?", "El material de alta calidad los hace más resistentes al desgaste: duran más que los calzoncillos regulares."],
-        ["¿Son adecuados para piel sensible?", "Sí. La suavidad del bambú reduce el roce y ayuda a mantener una higiene impecable."]
+        ["¿Qué es la fibra de bambú y por qué se utiliza para los calzoncillos tipo boxer?", "La fibra de bambú es un material natural que cada vez se aprecia más por sus propiedades suaves, transpirables y respetuosas con el medio ambiente. Se utiliza en la fabricación de nuestros calzoncillos tipo boxer para proporcionar un confort óptimo y promover una mejor higiene íntima."],
+        ["¿Por qué recomiendan los dermatólogos los calzoncillos de fibra de bambú?", "Los dermatólogos recomiendan nuestros calzoncillos de fibra de bambú debido a su suavidad y su capacidad para reducir el roce desagradable, ayudando a mantener una higiene impecable en áreas íntimas."],
+        ["¿En qué se diferencia la transpirabilidad de los calzoncillos de fibra de bambú de otros materiales?", "La excepcional transpirabilidad de nuestros calzoncillos de fibra de bambú permite que el aire circule, reduciendo la humedad y la transpiración. Siempre te sentirás cómodo y fresco, sin importar tu actividad."],
+        ["¿Cómo se compara la durabilidad de los calzoncillos de fibra de bambú con la de los calzoncillos tradicionales?", "Los calzoncillos de fibra de bambú están diseñados para una durabilidad añadida gracias a su material de alta calidad. Son más resistentes al desgaste y duran más que los calzoncillos regulares."],
+        ["¿Los calzoncillos de fibra de bambú son adecuados para piel sensible?", "Sí, en general, los calzoncillos de fibra de bambú son adecuados para la piel sensible debido a su suavidad y capacidad para reducir la irritación cutánea. Sin embargo, si tienes preocupaciones específicas, recomendamos consultar a un profesional de la salud."]
       ]}
     ],
 
@@ -160,9 +179,9 @@
     "#nalo-landing .nl-cmp-logo{height:24px;width:auto;margin-bottom:8px;display:inline-block}" +
     "#nalo-landing .nl-cmp-name{font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:8px;min-height:30px}" +
     "#nalo-landing .nl-cmp-prod{width:70px;height:70px;object-fit:contain;display:block;margin:0 auto}" +
-    "#nalo-landing .nl-cmp .yes,#nalo-landing .nl-cmp .no{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%}" +
-    "#nalo-landing .nl-cmp .yes{background:var(--v)}#nalo-landing .nl-cmp .no{background:#e0334b}" +
-    "#nalo-landing .nl-cmp .yes svg,#nalo-landing .nl-cmp .no svg{width:15px;height:15px}" +
+    "#nalo-landing .nl-cmp .yes,#nalo-landing .nl-cmp .no,#nalo-landing .nl-cmp .neu{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%}" +
+    "#nalo-landing .nl-cmp .yes{background:var(--v)}#nalo-landing .nl-cmp .no{background:#e0334b}#nalo-landing .nl-cmp .neu{background:#d3d6db}" +
+    "#nalo-landing .nl-cmp .yes svg,#nalo-landing .nl-cmp .no svg,#nalo-landing .nl-cmp .neu svg{width:15px;height:15px}" +
     "#nalo-landing .nl-cmp-row{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}" +
     "#nalo-landing .nl-cmp-row.show{opacity:1;transform:none}" +
     // techsplit
@@ -180,6 +199,13 @@
     "#nalo-landing .nl-ts summary::after{content:'+';color:var(--v);font-size:20px}" +
     "#nalo-landing .nl-ts details[open] summary::after{content:'\\2013'}" +
     "#nalo-landing .nl-ts p{margin:0 0 14px 40px;font-size:14px;line-height:1.55;color:#666;text-align:left}" +
+    // prose (imagen + texto)
+    "#nalo-landing .nl-pr{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1100px;margin:0 auto}" +
+    "#nalo-landing .nl-pr-media{aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:#f2f2f4}" +
+    "#nalo-landing .nl-pr-media img{width:100%;height:100%;object-fit:cover}" +
+    "#nalo-landing .nl-pr-txt h2{text-align:left;font-size:40px;font-weight:700;margin:0 0 18px}" +
+    "#nalo-landing .nl-pr-txt p{font-size:14px;line-height:1.6;color:#555;margin:0 0 14px}" +
+    "#nalo-landing .nl-pr-btn{margin-top:8px}" +
     // stats
     "#nalo-landing .nl-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;margin:0 auto}" +
     "#nalo-landing .nl-stat{text-align:center}" +
@@ -192,7 +218,7 @@
     "#nalo-landing .nl-feat{background:#f7f7f8;border-radius:16px;padding:24px}" +
     "#nalo-landing .nl-feat b{display:block;font-size:16px;margin-bottom:8px}" +
     "#nalo-landing .nl-feat p{margin:0;font-size:13.5px;line-height:1.55;color:#666}" +
-    "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats{grid-template-columns:1fr}#nalo-landing .nl-ts-media{max-width:360px;margin:0 auto}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
+    "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats,#nalo-landing .nl-pr{grid-template-columns:1fr}#nalo-landing .nl-ts-media,#nalo-landing .nl-pr-media{max-width:360px;margin:0 auto}#nalo-landing .nl-pr-media{order:-1}#nalo-landing .nl-pr-txt h2{text-align:left;font-size:28px}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
     "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:5px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:60px;height:40px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
@@ -233,8 +259,8 @@
             '<button class="buy">Comprar ahora</button>' +
           '</div>' +
           '<div class="nl-gl-right">' +
-            '<figure><img class="ga" src="' + sec.pairs[0][0] + '" alt="Antes"><span class="pill dark">Antes</span></figure>' +
-            '<figure><img class="gd" src="' + sec.pairs[0][1] + '" alt="Después"><span class="pill vio">Después</span></figure>' +
+            '<figure><img class="ga" src="' + sec.pairs[0][0] + '" alt=""><span class="pill dark">' + esc(sec.beforeLabel || "Antes") + '</span></figure>' +
+            '<figure><img class="gd" src="' + sec.pairs[0][1] + '" alt=""><span class="pill vio">' + esc(sec.afterLabel || "Después") + '</span></figure>' +
             '<div class="nl-gl-thumbs">' + thumbs + '</div>' +
           '</div>' +
         '</div></section>';
@@ -251,8 +277,11 @@
         head += '<th class="' + (brand ? "brand" : "") + '">' + inner + '</th>';
       });
       head += '</tr>';
+      var YES = '<span class="yes"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
+      var NO = '<span class="no"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></span>';
+      var NEU = '<span class="neu"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></span>';
       var body = sec.rows.map(function (r) {
-        var cells = r.slice(1).map(function (v, i) { return '<td class="' + (i === 0 ? "brand " : "") + '">' + (v ? '<span class="yes"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' : '<span class="no"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></span>') + '</td>'; }).join("");
+        var cells = r.slice(1).map(function (v, i) { return '<td class="' + (i === 0 ? "brand " : "") + '">' + (v === 2 ? NEU : v ? YES : NO) + '</td>'; }).join("");
         return '<tr class="nl-cmp-row"><td>' + esc(r[0]) + '</td>' + cells + '</tr>';
       }).join("");
       return '<section class="nl-sec"><h2 class="nl-h">' + titleH + '</h2><div class="nl-cmp"><table>' + head + body + '</table></div></section>';
@@ -271,6 +300,13 @@
         return '<div class="nl-stat"><div class="ring" style="--p:' + (p * 3.6) + 'deg"><i>' + esc(i[0]) + '</i></div><p>' + esc(i[1]) + '</p></div>';
       }).join("");
       return '<section class="nl-sec"><h2 class="nl-h">' + esc(sec.title) + '</h2><div class="nl-stats">' + cards + '</div><p class="nl-note">' + esc(sec.note) + '</p></section>';
+    }
+    if (t === "prose") {
+      var ps = sec.paragraphs.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join("");
+      var med = '<div class="nl-pr-media"><img src="' + sec.media + '" alt=""></div>';
+      var txt = '<div class="nl-pr-txt"><h2>' + esc(sec.title) + '</h2>' + ps +
+        (sec.button ? '<button class="buy nl-pr-btn">' + esc(sec.button) + '</button>' : '') + '</div>';
+      return '<section class="nl-sec"><div class="nl-pr">' + (sec.mediaRight ? txt + med : med + txt) + '</div></section>';
     }
     if (t === "features") {
       var f = sec.items.map(function (i) { return '<div class="nl-feat"><b>' + esc(i[0]) + '</b><p>' + esc(i[1]) + '</p></div>'; }).join("");
@@ -303,6 +339,11 @@
         b.classList.add("on");
       });
     });
+  });
+
+  // botones "comprar" de bloques prose -> arriba
+  mount.querySelectorAll(".nl-pr-btn").forEach(function (b) {
+    b.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
   });
 
   // reels de instagram: click reproduce/pausa
