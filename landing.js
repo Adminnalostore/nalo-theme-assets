@@ -137,6 +137,49 @@
         ["¿Cómo los lavo?", "Lavarropas en agua fría, colgado a secar. Nada más. No se planchan, no van a la tintorería, no encogen y no destiñen."],
         ["¿Cuánto tardan en llegar?", "El pedido se despacha en las primeras 24 horas hábiles. El envío demora, luego de ser despachado, de 24 a 48hs en CABA y de 2 a 6 días hábiles al resto del país."]
       ]}
+    ],
+
+    "camisa-hombre-nalo-impermeable-antiarrugas-manga-larga": [
+      { type: "instagram", title: "Miles de reseñas orgánicas", subtitle: "Más de 10 millones de visitas en Instagram",
+        link: IG, videos: ["brandon", "juan", "fabri", "bigari"] },
+      { type: "gallery", title: "Cambio visible desde que te la ponés.", highlight: "visible",
+        leftTitle: "Resultados reales validados por usuarios.", stat: "96%",
+        statTxt: "confirmó que su camisa se mantuvo sin arrugas y sin manchas durante todo el día.",
+        note: "* Basado en estudio interno con más de 280 usuarios. Los resultados pueden variar según el uso y el tipo de líquido. Para manchas grasas pesadas se recomienda limpieza inmediata.",
+        pairs: [ [B+"landings/camisa/gallery/a1.jpg", B+"landings/camisa/gallery/d1.jpg"],
+                 [B+"landings/camisa/gallery/a2.jpg", B+"landings/camisa/gallery/d2.jpg"],
+                 [B+"landings/camisa/gallery/a3.jpg", B+"landings/camisa/gallery/d3.jpg"],
+                 [B+"landings/camisa/gallery/a4.jpg", B+"landings/camisa/gallery/d4.jpg"],
+                 [B+"landings/camisa/gallery/a5.jpg", B+"landings/camisa/gallery/d5.jpg"] ] },
+      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/camisa/tec/media.mp4", items: [
+        ["Impecable Sin Planchar", "Tejido antiarrugas de alta densidad que se adapta al movimiento y mantiene su forma durante todo el día. Olvidate de la plancha y la tintorería: una sola camisa te dura prolija de la mañana a la noche.", B+"landings/camisa/tec/ic0.png"],
+        ["Escudo Anti-Manchas", "Capa hidrorepelente integrada a la fibra que hace que el café, el vino y el agua resbalen sin penetrar la tela. Limpiás con una servilleta y seguís tu día sin marcas ni preocupaciones.", B+"landings/camisa/tec/ic1.png"],
+        ["Libertad De Movimiento Total", "Elasticidad en 4 direcciones que acompaña cada movimiento sin tirantez ni restricción. De la reunión al after, sin sentir que tenés que acomodarte la camisa todo el tiempo.", B+"landings/camisa/tec/ic2.png"],
+        ["Frescura Que Dura", "Alta transpirabilidad que permite la circulación constante de aire y regula la temperatura corporal. Mantenés la frescura incluso en jornadas largas o días intensos.", B+"landings/camisa/tec/ic3.png"],
+        ["Resistente Al Sudor", "Tecnología que evita la absorción y la aparición de marcas húmedas en las zonas críticas. Llegás a cualquier compromiso con la camisa tan seca y prolija como cuando saliste de tu casa.", B+"landings/camisa/tec/ic4.png"],
+        ["Calce A Medida", "Estructura ergonómica con corte moderno que estiliza el cuerpo y se conserva lavado tras lavado. Pretratada para mantener su forma original desde el primer uso hasta el último.", B+"landings/camisa/tec/ic5.png"]
+      ]},
+      { type: "compare", title: "Por Qué Nalo Gana:", highlight: "Nalo Gana:", subtitle: "Ingeniería textil real.",
+        logo: B+"landings/camisa/cmp/logo.png",
+        images: [B+"landings/camisa/cmp/col0.png", B+"landings/camisa/cmp/col1.png", B+"landings/camisa/cmp/col2.png", B+"landings/camisa/cmp/col3.png"],
+        cols: ["", "Camisa de Algodón", "Camisa de Lino", "Camisa de Poliéster"],
+        rows: [ ["No necesita plancha",1,0,0,1], ["Repele líquidos y manchas",1,0,0,0],
+                ["Transpirable",1,2,1,0], ["Elasticidad 4 direcciones",1,0,0,0],
+                ["Resistente al sudor",1,0,0,2], ["Mantiene la forma lavado tras lavado",1,0,0,1],
+                ["Calce moderno y estructurado",1,2,0,2] ]},
+      { type: "prose", title: "Estilo, protección y libertad total.", media: B+"landings/camisa/prose/media.mp4", mediaRight: true, button: "COMPRAR AHORA",
+        paragraphs: [
+          "Dejá de conformarte. Lográ el look definido de una camisa premium, con la libertad de movimiento del día, la frescura del tejido natural y la tranquilidad de saber que ningún derrame accidental te va a arruinar la reunión. Elevá tu confianza ahora."
+        ]},
+      { type: "faq", title: "Preguntas frecuentes", items: [
+        ["¿Realmente repele líquidos? ¿Cómo funciona?", "Sí. La camisa tiene una capa hidrorepelente aplicada a nivel fibra que crea una barrera invisible: los líquidos a base de agua (café, vino, gaseosas, jugo) y la mayoría de los aceites livianos se deslizan sin penetrar la tela. Para manchas grasas pesadas recomendamos limpieza inmediata."],
+        ["¿El efecto repelente se gasta con los lavados?", "No. El tratamiento está integrado en la fibra, no es un spray superficial. Mantiene sus propiedades durante toda la vida útil de la prenda siguiendo las recomendaciones de lavado (agua fría, sin suavizantes agresivos)."],
+        ["¿La camisa realmente no necesita plancha?", "Sí. Gracias a su tejido antiarrugas, mantiene una apariencia prolija durante todo el día. En la mayoría de los casos no requiere planchado y se alisa fácilmente al colgarla."],
+        ["¿Es cómoda para usar todo el día?", "Sí. Su elasticidad en 4 direcciones permite libertad de movimiento sin tirantez, ideal para jornadas largas o viajes."],
+        ["¿La tela es transpirable?", "Sí. El tejido técnico facilita la circulación del aire, ayudando a mantener la frescura incluso en días intensos."],
+        ["¿Cómo debo lavarla para conservarla en perfecto estado?", "Recomendamos lavar con agua fría y colores similares, evitar el uso de blanqueadores y secar al aire o a baja temperatura. No requiere plancha, pero si se desea, usar temperatura baja."],
+        ["¿Mantiene su forma con el uso y los lavados?", "Sí. Está diseñada para conservar su estructura, ajuste y apariencia impecable lavado tras lavado."]
+      ]}
     ]
   };
 
@@ -224,7 +267,7 @@
     // prose (imagen + texto)
     "#nalo-landing .nl-pr{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1100px;margin:0 auto}" +
     "#nalo-landing .nl-pr-media{aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:#f2f2f4}" +
-    "#nalo-landing .nl-pr-media img{width:100%;height:100%;object-fit:cover}" +
+    "#nalo-landing .nl-pr-media img,#nalo-landing .nl-pr-media video{width:100%;height:100%;object-fit:cover}" +
     "#nalo-landing .nl-pr-txt h2{text-align:left;font-size:40px;font-weight:700;margin:0 0 18px}" +
     "#nalo-landing .nl-pr-txt p{font-size:14px;line-height:1.6;color:#555;margin:0 0 14px}" +
     "#nalo-landing .nl-pr-btn{margin-top:10px;display:inline-block;background:var(--v);color:#fff;font-weight:700;font-size:14px;letter-spacing:.05em;text-transform:uppercase;padding:17px 42px;border:0;border-radius:40px;cursor:pointer;transition:.15s}" +
@@ -332,7 +375,10 @@
     }
     if (t === "prose") {
       var ps = sec.paragraphs.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join("");
-      var med = '<div class="nl-pr-media"><img src="' + sec.media + '" alt=""></div>';
+      var pm = /\.(mp4|webm)$/i.test(sec.media || "")
+        ? '<video src="' + sec.media + '" autoplay muted loop playsinline preload="metadata"></video>'
+        : '<img src="' + sec.media + '" alt="">';
+      var med = '<div class="nl-pr-media">' + pm + '</div>';
       var txt = '<div class="nl-pr-txt"><h2>' + esc(sec.title) + '</h2>' + ps +
         (sec.button ? '<button class="buy nl-pr-btn">' + esc(sec.button) + '</button>' : '') + '</div>';
       return '<section class="nl-sec"><div class="nl-pr">' + (sec.mediaRight ? txt + med : med + txt) + '</div></section>';

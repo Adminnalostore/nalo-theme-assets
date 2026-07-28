@@ -22,7 +22,8 @@
   };
   var VIDS = vidsAttr ? vidsAttr.split(",") : ["brandon", "juan", "fabri", "bigari"];
   var N = VIDS.length;
-  var SEQ = VIDS.concat(VIDS).concat(VIDS); // 3 copias: set central = [N, 2N)
+  var COPIES = 5, MID = 2;                 // 5 copias, set central = [MID*N, (MID+1)*N)
+  var SEQ = []; for (var _c = 0; _c < COPIES; _c++) SEQ = SEQ.concat(VIDS);
 
   var CSS = "" +
     "#nalo-videos .nv{max-width:1240px;margin:0 auto;padding:44px 0 60px}" +
@@ -117,11 +118,11 @@
     settle = setTimeout(relocate, 120); // tras frenar, reposicionar al set central
   });
 
-  // Loop infinito: mantener el centrado dentro del set central [N, 2N)
+  // Loop infinito en ambos sentidos: mantener el centrado dentro del set central [MID*N, (MID+1)*N)
   function relocate() {
     var i = nearestIndex();
-    if (i < N || i >= 2 * N) {
-      var mid = N + (((i % N) + N) % N);
+    if (i < MID * N || i >= (MID + 1) * N) {
+      var mid = MID * N + (((i % N) + N) % N);
       var delta = (mid - i) * step;
       track.scrollLeft += delta;      // salto sin animación
       current = -1; focusOn(nearestIndex());
@@ -133,7 +134,7 @@
   itemEls.forEach(function (it, i) {
     it.querySelector(".nv-vid").addEventListener("click", function () { centerIndex(i, true); });
     var snd = it.querySelector(".nv-sound"), vv = it.querySelector("video");
-    snd.addEventListener("click", function (e) {
+    if (snd) snd.addEventListener("click", function (e) {
       e.stopPropagation();
       vv.muted = !vv.muted;
       snd.classList.toggle("on", !vv.muted);
@@ -144,7 +145,7 @@
   function start() {
     measure();
     if (!step) { setTimeout(start, 80); return; }
-    centerIndex(N + 1, false);
+    centerIndex(MID * N + 1, false);
     focusOn(nearestIndex());
   }
   setTimeout(start, 80);
