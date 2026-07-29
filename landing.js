@@ -180,6 +180,42 @@
         ["¿Cómo debo lavarla para conservarla en perfecto estado?", "Recomendamos lavar con agua fría y colores similares, evitar el uso de blanqueadores y secar al aire o a baja temperatura. No requiere plancha, pero si se desea, usar temperatura baja."],
         ["¿Mantiene su forma con el uso y los lavados?", "Sí. Está diseñada para conservar su estructura, ajuste y apariencia impecable lavado tras lavado."]
       ]}
+    ],
+
+    "remera-reductora-nalo": [
+      { type: "instagram", title: "Miles de reseñas orgánicas", subtitle: "Más de 10 millones de visitas en Instagram",
+        link: IG, videos: ["r1", "r2", "r3"], vidBase: "landings/remera/videos/" },
+      { type: "gallery", title: "Cambio visible desde que te la ponés.", highlight: "visible",
+        leftTitle: "Resultados reales validados por usuarios.", stat: "94%",
+        statTxt: "sintió la panza más firme y mayor confianza al ponérsela.",
+        note: "* Basado en encuesta a 100 usuarios. Los resultados pueden variar según el cuerpo y el talle elegido. Usar el talle recomendado por nuestra guía para máxima efectividad.",
+        pairs: [ [B+"landings/remera/gallery/a1.jpg", B+"landings/remera/gallery/d1.jpg"],
+                 [B+"landings/remera/gallery/a2.jpg", B+"landings/remera/gallery/d2.jpg"],
+                 [B+"landings/remera/gallery/a3.jpg", B+"landings/remera/gallery/d3.jpg"],
+                 [B+"landings/remera/gallery/a4.jpg", B+"landings/remera/gallery/d4.jpg"],
+                 [B+"landings/remera/gallery/a5.jpg", B+"landings/remera/gallery/d5.jpg"] ] },
+      { type: "techsplit", title: "Tecnología Textil Que Trabaja Por Vos", media: B+"landings/remera/tec/media.mp4", items: [
+        ["Abdomen Plano Al Instante", "Doble capa de compresión en abdomen y pecho que reduce visualmente hasta 2 talles desde el primer uso. Aplana la panza y contiene el pecho sin esfuerzo.", B+"landings/remera/tec/ic0.png"],
+        ["No Se Marca La Transpiración", "Las mangas cubren la axila y el tejido con fibras hidrofóbicas frena el sudor: no traspasa a tu camisa. Levantás los brazos tranquilo, sin manchas a la vista.", B+"landings/remera/tec/ic1.png"],
+        ["Abriga Sin Volumen", "Tejido térmico que suma una capa de calor fina bajo la ropa. Ideal para el frío, sin que se note ni te agrande la silueta.", B+"landings/remera/tec/ic2.png"],
+        ["Postura Erguida Y Confiada", "El entramado posterior ejerce una tracción ligera que alinea tus hombros y columna, corrigiendo la postura encorvada del escritorio o el celular.", B+"landings/remera/tec/ic3.png"],
+        ["Invisible Bajo La Ropa", "Costuras planas y corte seamless. No se marca bajo camisas, remeras ni ropa de trabajo. Nadie nota que la llevás puesta.", B+"landings/remera/tec/ic4.png"],
+        ["Compresión Que No Aprieta", "Mezcla de 83% elastano y 17% nylon que comprime sin cortar la circulación. Te acompaña todo el día sin molestias ni marcas en la piel.", B+"landings/remera/tec/ic5.png"],
+        ["Calidad Premium Duradera", "Fibras de alta densidad que mantienen la compresión y la forma lavado tras lavado. Una prenda pensada para durar años.", B+"landings/remera/tec/ic6.png"]
+      ]},
+      { type: "compare", title: "Por Qué Nalo Gana:", highlight: "Nalo Gana:", subtitle: "Ingeniería textil real.",
+        logo: B+"landings/remera/cmp/logo.png",
+        images: [B+"landings/remera/cmp/col0.png", B+"landings/remera/cmp/col1.png", B+"landings/remera/cmp/col2.png", B+"landings/remera/cmp/col3.png"],
+        cols: ["", "Remera común", "Faja tradicional", "Remera térmica"],
+        rows: [ ["Invisible bajo cualquier prenda",1,2,0,1], ["Reduce panza al instante",1,0,1,0],
+                ["Contiene y disimula el pecho",1,0,0,0], ["No se marca la transpiración",1,0,0,2],
+                ["Abriga en invierno",1,0,0,1], ["Corrige la postura",1,0,0,0],
+                ["Doble capa de compresión",1,0,1,0], ["Apta para uso diario y deporte",1,1,0,1] ]},
+      { type: "stats", title: "Resultados Comprobados por Nuestros Clientes",
+        note: "Resultados comprobados en un estudio interno con más de 150 usuarios del producto.",
+        items: [ ["93%","Dijeron sentirse más seguros al usar la remera reductora."],
+                 ["95%","Contaron que se vieron más atractivos: en una cita, en el laburo o hasta en el gimnasio."],
+                 ["90%","Afirmaron que al notarse más firmes y prolijos, se sintieron motivados a entrenar más."] ]}
     ]
   };
 
