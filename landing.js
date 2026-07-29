@@ -228,7 +228,7 @@
       { type: "prose", title: "¿Cómo funciona?", media: B+"landings/pulsera/videos/como.mp4", button: "Comprar ahora",
         paragraphs: [
           "La pulsera Nalo canaliza el poder ancestral de la hematita, una piedra magnética que antiguamente era venerada por los guerreros por sus efectos de arraigo y revitalización.",
-          "Al usarla a diario, crea un vínculo directo con el campo energético de tu cuerpo, apoyando de forma natural el metabolismo y la concentración, sin sobrecargar tu sistema como lo hacen las pastillas.",
+          "Al usarlo a diario, crea un vínculo directo con el campo energético de tu cuerpo, apoyando de forma natural el metabolismo, la testosterona y la concentración, sin sobrecargar tu sistema como lo hacen las pastillas.",
           "Mientras los suplementos generan picos y caídas, Nalo ofrece una estimulación magnética constante. Los hombres reportan mayor enfoque, energía duradera y una renovada confianza masculina."
         ]},
       { type: "darkcards", title: "La lenta caída de la masculinidad", cards: [
@@ -252,13 +252,13 @@
         intro: "La pulsera Nalo te ayuda a reactivar la energía masculina, el enfoque y la confianza — con un simple ritual diario. Sin pastillas. Sin efectos secundarios. Sin “trucos” sobrevalorados.",
         features: [
           ["Sentí el cambio rápidamente", "Usala todos los días y empezá a notar la diferencia: mayor claridad mental, energía constante, mejor estado de ánimo y ese filo agudo volviendo."],
-          ["Liberate de las soluciones modernas", "Más del 90% de los usuarios de Nalo reportan mayor energía, foco y confianza, sin pastillas, polvos ni inyecciones. Solo activación magnética pura."],
-          ["Vitalidad masculina duradera", "Nalo apoya tu metabolismo y tu impulso, ayudándote a sentirte poderoso otra vez, día tras día."]
+          ["Liberate de las soluciones modernas", "Más del 90% de los usuarios de Nalo reportan mayor energía, libido más fuerte y mayor confianza, sin pastillas, polvos ni inyecciones. Solo activación magnética pura."],
+          ["Vitalidad masculina duradera", "Nalo apoya tu testosterona natural, tu metabolismo y tu impulso, ayudándote a sentirte poderoso otra vez, día tras día."]
         ]},
       { type: "imgslider", images: [B+"landings/pulsera/slider/s1.webp", B+"landings/pulsera/slider/s2.webp", B+"landings/pulsera/slider/s3.webp", B+"landings/pulsera/slider/s4.webp"] },
       { type: "vs", title: "Cómo somos diferentes", logo: B+"landings/musculosa/cmp/logo.png",
         lead: "Nalo te devuelve a la fuente: el poder natural de tu cuerpo. Energía magnética pura proveniente de la hematita, usada como un ritual para agudizar tu enfoque, restaurar tu impulso y reactivar el hombre que fuiste diseñado para ser.",
-        rows: [ "Reactiva tu impulso primal", "Restaura tu energía masculina", "Potencia tu metabolismo y concentración", "Mejora el sueño y acelera la recuperación", "Diseño minimalista, discreto y elegante" ] }
+        rows: [ "Reactiva tu impulso primal", "Restaura tu energía masculina", "Potencia testosterona y concentración", "Mejora el sueño y acelera la recuperación", "Diseño minimalista, discreto y elegante" ] }
     ]
   };
 
@@ -405,21 +405,27 @@
     // imgslider
     "#nalo-landing .nl-islider{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1240px;margin:0 auto}" +
     "#nalo-landing .nl-islider img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;display:block}" +
-    // vs (Cómo somos diferentes)
-    "#nalo-landing .nl-vs{max-width:760px;margin:0 auto}" +
-    "#nalo-landing .nl-vs .lead{text-align:center;color:#555;font-size:14.5px;line-height:1.6;margin:0 auto 28px;max-width:660px}" +
-    "#nalo-landing .nl-vs table{width:100%;border-collapse:collapse}" +
-    "#nalo-landing .nl-vs td{padding:16px 12px;border-bottom:1px solid #eee;vertical-align:middle}" +
-    "#nalo-landing .nl-vs thead td{border-bottom:1px solid #e0e0e0}" +
-    "#nalo-landing .nl-vs td:first-child{font-weight:700;font-size:14px}" +
-    "#nalo-landing .nl-vs .col{text-align:center;width:120px}" +
-    "#nalo-landing .nl-vs .vlogo{height:22px;width:auto}" +
-    "#nalo-landing .nl-vs .oth{color:#888;font-weight:600;font-size:13px}" +
-    "#nalo-landing .nl-vs .vy,#nalo-landing .nl-vs .vn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%}" +
-    "#nalo-landing .nl-vs .vy{background:#53af01}#nalo-landing .nl-vs .vn{background:#dbdbdb}" +
-    "#nalo-landing .nl-vs .vy svg,#nalo-landing .nl-vs .vn svg{width:15px;height:15px;fill:#fff}" +
+    // vs (Cómo somos diferentes) - 2 columnas
+    "#nalo-landing .nl-vs2{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1120px;margin:0 auto}" +
+    "#nalo-landing .nl-vs2-left h2{text-align:left;font-size:40px;font-weight:700;margin:0 0 18px;line-height:1.1}" +
+    "#nalo-landing .nl-vs2-left p{text-align:left;font-size:15px;line-height:1.6;color:#555;margin:0}" +
+    "#nalo-landing .nl-vs2-table{background:#fff;border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.10);padding:10px 14px}" +
+    "#nalo-landing .nl-vs2-table table{width:100%;border-collapse:separate;border-spacing:0}" +
+    "#nalo-landing .nl-vs2-table td{padding:15px 10px;text-align:center;vertical-align:middle}" +
+    "#nalo-landing .nl-vs2-table .lbl{background:#000;color:#fff;font-weight:700;font-size:13.5px;width:54%;padding:15px 18px;line-height:1.3}" +
+    "#nalo-landing .nl-vs2-table .hd-lbl{background:transparent}" +
+    "#nalo-landing .nl-vs2-table tbody tr:first-child .lbl{border-radius:16px 16px 0 0}" +
+    "#nalo-landing .nl-vs2-table tbody tr:last-child .lbl{border-radius:0 0 16px 16px}" +
+    "#nalo-landing .nl-vs2-table .col{width:23%}" +
+    "#nalo-landing .nl-vs2-table tbody .col{border-bottom:1px solid #eee}" +
+    "#nalo-landing .nl-vs2-table tbody tr:last-child .col{border-bottom:0}" +
+    "#nalo-landing .nl-vs2-table .oth{color:#888;font-weight:700;font-size:13px}" +
+    "#nalo-landing .nl-vs2-table .vlogo{height:22px;width:auto;vertical-align:middle}" +
+    "#nalo-landing .nl-vs2-table .vy{width:22px;height:22px}#nalo-landing .nl-vs2-table .vn{width:20px;height:20px}" +
+    // alineación izquierda de textos en prose/iconsplit (la sección custom fuerza center)
+    "#nalo-landing .nl-pr-txt{text-align:left}#nalo-landing .nl-isplit>div>p{text-align:left}" +
     "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats,#nalo-landing .nl-pr{grid-template-columns:1fr}#nalo-landing .nl-ts-media,#nalo-landing .nl-pr-media{max-width:360px;margin:0 auto}#nalo-landing .nl-pr-media{order:-1}#nalo-landing .nl-pr-txt h2{text-align:left;font-size:28px}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
-    "#nalo-landing .nl-halo-grid,#nalo-landing .nl-darkcards,#nalo-landing .nl-testi,#nalo-landing .nl-isplit{grid-template-columns:1fr}#nalo-landing .nl-islider{grid-template-columns:1fr 1fr;gap:12px}#nalo-landing .nl-halo-img{max-width:340px;margin:0 auto}#nalo-landing .nl-darksec h2,#nalo-landing .nl-isplit h2{font-size:26px}#nalo-landing .nl-isplit h2{text-align:left}" +
+    "#nalo-landing .nl-halo-grid,#nalo-landing .nl-darkcards,#nalo-landing .nl-testi,#nalo-landing .nl-isplit,#nalo-landing .nl-vs2{grid-template-columns:1fr}#nalo-landing .nl-islider{grid-template-columns:1fr 1fr;gap:12px}#nalo-landing .nl-halo-img{max-width:340px;margin:0 auto}#nalo-landing .nl-darksec h2,#nalo-landing .nl-isplit h2,#nalo-landing .nl-vs2-left h2{font-size:26px}#nalo-landing .nl-isplit h2{text-align:left}" +
     "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:5px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:60px;height:40px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
   var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 
@@ -550,12 +556,13 @@
       return '<section class="nl-sec"><div class="nl-islider">' + isl + '</div></section>';
     }
     if (t === "vs") {
-      var VY = '<span class="vy"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>';
-      var VN = '<span class="vn"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg></span>';
-      var vhead = '<thead><tr><td></td><td class="col"><img class="vlogo" src="' + sec.logo + '" alt="Nalo"></td><td class="col oth">Otros</td></tr></thead>';
-      var vbody = sec.rows.map(function (r) { return '<tr><td>' + esc(r) + '</td><td class="col">' + VY + '</td><td class="col">' + VN + '</td></tr>'; }).join("");
-      return '<section class="nl-sec"><h2 class="nl-h">' + esc(sec.title) + '</h2><div class="nl-vs">' +
-        (sec.lead ? '<p class="lead">' + esc(sec.lead) + '</p>' : '') + '<table>' + vhead + vbody + '</table></div></section>';
+      var VY = '<svg class="vy" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="#22b04a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      var VN = '<svg class="vn" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="#111" stroke-width="3" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke="#111" stroke-width="3" stroke-linecap="round"/></svg>';
+      var vhead = '<tr><td class="lbl hd-lbl"></td><td class="col"><img class="vlogo" src="' + sec.logo + '" alt="Nalo"></td><td class="col oth">Otros</td></tr>';
+      var vbody = sec.rows.map(function (r) { return '<tr><td class="lbl">' + esc(r) + '</td><td class="col">' + VY + '</td><td class="col">' + VN + '</td></tr>'; }).join("");
+      return '<section class="nl-sec"><div class="nl-vs2">' +
+        '<div class="nl-vs2-left"><h2>' + esc(sec.title) + '</h2>' + (sec.lead ? '<p>' + esc(sec.lead) + '</p>' : '') + '</div>' +
+        '<div class="nl-vs2-table"><table><thead>' + vhead + '</thead><tbody>' + vbody + '</tbody></table></div></div></section>';
     }
     if (t === "features") {
       var f = sec.items.map(function (i) { return '<div class="nl-feat"><b>' + esc(i[0]) + '</b><p>' + esc(i[1]) + '</p></div>'; }).join("");
