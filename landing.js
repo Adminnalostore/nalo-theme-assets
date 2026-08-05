@@ -596,10 +596,10 @@
       '<hr class="nl-trust-div">' +
       '<div class="nl-pay"><span class="nl-pay-lbl">Pagá seguro con</span>' +
         '<div class="nl-pay-tiles">' +
-          '<div class="nl-pay-tile"><img src="' + B + 'pay/visa.png" alt="Visa" loading="lazy"></div>' +
-          '<div class="nl-pay-tile"><img src="' + B + 'pay/mastercard.webp" alt="Mastercard" loading="lazy"></div>' +
-          '<div class="nl-pay-tile"><img src="' + B + 'pay/amex.webp" alt="American Express" loading="lazy"></div>' +
-          '<div class="nl-pay-tile"><img src="' + B + 'pay/naranjax.webp" alt="Naranja X" loading="lazy"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/visa.png" alt="Visa"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/mastercard.webp" alt="Mastercard"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/amex.webp" alt="American Express"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/naranjax.webp" alt="Naranja X"></div>' +
         '</div>' +
       '</div>' +
     '</div></div>';
