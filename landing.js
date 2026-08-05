@@ -604,7 +604,6 @@
           '<div class="nl-pay-tile"><svg viewBox="0 0 40 24" width="32" height="20"><circle cx="16" cy="12" r="8" fill="#EB001B"/><circle cx="24" cy="12" r="8" fill="#F79E1B"/></svg></div>' +
           '<div class="nl-pay-tile"><span class="amex">AMEX</span></div>' +
           '<div class="nl-pay-tile"><span class="nx">Naranja X</span></div>' +
-          '<div class="nl-pay-tile"><span class="mp">mercado pago</span></div>' +
         '</div>' +
       '</div>' +
     '</div></div>';
