@@ -573,6 +573,25 @@
 
   mount.innerHTML = secs.map(render).join("");
 
+  // Reseñas de Wigy: las inyecta async DENTRO de la ficha del producto (arriba de la
+  // landing). Las movemos al final del body para que queden después de todo el contenido.
+  (function relocateWigy() {
+    function move() {
+      var rev = document.querySelector("#wigy-reviews:not([data-nl-moved])");
+      if (!rev) return;
+      rev.setAttribute("data-nl-moved", "1");
+      mount.appendChild(rev);
+    }
+    move();
+    var n = 0;
+    var iv = setInterval(function () { move(); if (++n > 60) clearInterval(iv); }, 400);
+    if (window.MutationObserver) {
+      var mo = new MutationObserver(function () { move(); });
+      mo.observe(document.body, { childList: true, subtree: true });
+      setTimeout(function () { mo.disconnect(); }, 25000);
+    }
+  })();
+
   // carrusel de videos igual al de la home (reutiliza videos.js sobre #nalo-videos)
   if (mount.querySelector("#nalo-videos")) {
     var vs = document.createElement("script");
