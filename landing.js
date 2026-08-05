@@ -437,12 +437,8 @@
     ".nl-pay{display:flex;align-items:center;gap:12px;flex-wrap:wrap}" +
     ".nl-pay-lbl{font-size:12.5px;color:#555;font-weight:600}" +
     ".nl-pay-tiles{display:flex;gap:7px;flex-wrap:wrap}" +
-    ".nl-pay-tile{height:30px;min-width:48px;padding:0 8px;border:1px solid #ebebeb;border-radius:5px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.03)}" +
-    ".nl-pay-tile svg{display:block}" +
-    ".nl-pay-tile .visa{font-weight:800;font-style:italic;color:#1A1F71;font-size:14px;letter-spacing:.5px}" +
-    ".nl-pay-tile .amex{font-weight:800;color:#006FCF;font-size:11px;letter-spacing:.5px}" +
-    ".nl-pay-tile .nx{font-weight:800;color:#FF6A13;font-size:10.5px}" +
-    ".nl-pay-tile .mp{font-weight:800;color:#00A6E0;font-size:10px;white-space:nowrap}" +
+    ".nl-pay-tile{height:30px;width:48px;padding:0 7px;border:1px solid #ebebeb;border-radius:5px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.03)}" +
+    ".nl-pay-tile img{max-height:18px;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}" +
     "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats,#nalo-landing .nl-pr{grid-template-columns:1fr}#nalo-landing .nl-ts-media,#nalo-landing .nl-pr-media{max-width:360px;margin:0 auto}#nalo-landing .nl-pr-media{order:-1}#nalo-landing .nl-pr-txt h2{text-align:left;font-size:28px}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
     "#nalo-landing .nl-halo-grid,#nalo-landing .nl-darkcards,#nalo-landing .nl-testi,#nalo-landing .nl-isplit,#nalo-landing .nl-vs2{grid-template-columns:1fr}#nalo-landing .nl-islider{grid-template-columns:1fr 1fr;gap:12px}#nalo-landing .nl-halo-img{max-width:340px;margin:0 auto}#nalo-landing .nl-darksec h2,#nalo-landing .nl-isplit h2,#nalo-landing .nl-vs2-left h2{font-size:26px}#nalo-landing .nl-isplit h2{text-align:left}" +
     "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:5px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:60px;height:40px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
@@ -600,10 +596,10 @@
       '<hr class="nl-trust-div">' +
       '<div class="nl-pay"><span class="nl-pay-lbl">Pagá seguro con</span>' +
         '<div class="nl-pay-tiles">' +
-          '<div class="nl-pay-tile"><span class="visa">VISA</span></div>' +
-          '<div class="nl-pay-tile"><svg viewBox="0 0 40 24" width="32" height="20"><circle cx="16" cy="12" r="8" fill="#EB001B"/><circle cx="24" cy="12" r="8" fill="#F79E1B"/></svg></div>' +
-          '<div class="nl-pay-tile"><span class="amex">AMEX</span></div>' +
-          '<div class="nl-pay-tile"><span class="nx">Naranja X</span></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/visa.png" alt="Visa" loading="lazy"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/mastercard.webp" alt="Mastercard" loading="lazy"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/amex.webp" alt="American Express" loading="lazy"></div>' +
+          '<div class="nl-pay-tile"><img src="' + B + 'pay/naranjax.webp" alt="Naranja X" loading="lazy"></div>' +
         '</div>' +
       '</div>' +
     '</div></div>';
