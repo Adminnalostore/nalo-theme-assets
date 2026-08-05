@@ -424,23 +424,25 @@
     "#nalo-landing .nl-vs2-table .vy{width:22px;height:22px}#nalo-landing .nl-vs2-table .vn{width:20px;height:20px}" +
     // alineación izquierda de textos en prose/iconsplit (la sección custom fuerza center)
     "#nalo-landing .nl-pr-txt{text-align:left}#nalo-landing .nl-isplit>div>p{text-align:left}" +
-    // bloque de envíos + pagos
-    "#nalo-landing .nl-trust{max-width:860px;margin:10px auto 0;padding:0 24px}" +
-    "#nalo-landing .nl-trust-card{border:1px solid #ececec;border-radius:16px;padding:22px 26px;background:#fff}" +
-    "#nalo-landing .nl-trust-rows{display:flex;gap:24px;flex-wrap:wrap}" +
-    "#nalo-landing .nl-trust-item{display:flex;gap:12px;align-items:flex-start;flex:1;min-width:230px}" +
-    "#nalo-landing .nl-trust-item .ic{flex:0 0 auto;line-height:0}" +
-    "#nalo-landing .nl-trust-item .ic svg{width:26px;height:26px;fill:var(--v)}" +
-    "#nalo-landing .nl-trust-item b{display:block;font-size:14px;font-weight:700;color:#111;margin:1px 0 3px}" +
-    "#nalo-landing .nl-trust-item span{display:block;font-size:13px;color:#666;line-height:1.45}" +
-    "#nalo-landing .nl-trust-div{border:0;border-top:1px solid #f0f0f0;margin:18px 0 15px}" +
-    "#nalo-landing .nl-pay{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}" +
-    "#nalo-landing .nl-pay-lbl{font-size:13px;color:#555;font-weight:600}" +
-    "#nalo-landing .nl-pay-tiles{display:flex;gap:8px;flex-wrap:wrap}" +
-    "#nalo-landing .nl-pay-tile{height:34px;min-width:56px;padding:0 10px;border:1px solid #ebebeb;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.03)}" +
-    "#nalo-landing .nl-pay-tile .visa{font-weight:800;font-style:italic;color:#1A1F71;font-size:15px;letter-spacing:.5px}" +
-    "#nalo-landing .nl-pay-tile .amex{font-weight:800;color:#006FCF;font-size:12px;letter-spacing:.5px}" +
-    "#nalo-landing .nl-pay-tile .nx{font-weight:800;color:#FF6A13;font-size:11px}" +
+    // bloque de envíos + pagos (vive dentro de la descripción, debajo del botón; sin prefijo #nalo-landing)
+    ".nl-trust{margin:4px 0 18px}.nl-trust *{box-sizing:border-box}" +
+    ".nl-trust-card{border:1px solid #ececec;border-radius:12px;padding:16px 18px;background:#fff}" +
+    ".nl-trust-rows{display:flex;gap:18px;flex-wrap:wrap}" +
+    ".nl-trust-item{display:flex;gap:11px;align-items:flex-start;flex:1;min-width:170px}" +
+    ".nl-trust-item .ic{flex:0 0 auto;line-height:0}" +
+    ".nl-trust-item .ic svg{width:24px;height:24px;fill:#5200FF}" +
+    ".nl-trust-item b{display:block;font-size:14px;font-weight:700;color:#111;margin:0 0 2px}" +
+    ".nl-trust-item span{display:block;font-size:12.5px;color:#666;line-height:1.45}" +
+    ".nl-trust-div{border:0;border-top:1px solid #f0f0f0;margin:15px 0 13px}" +
+    ".nl-pay{display:flex;align-items:center;gap:12px;flex-wrap:wrap}" +
+    ".nl-pay-lbl{font-size:12.5px;color:#555;font-weight:600}" +
+    ".nl-pay-tiles{display:flex;gap:7px;flex-wrap:wrap}" +
+    ".nl-pay-tile{height:30px;min-width:48px;padding:0 8px;border:1px solid #ebebeb;border-radius:5px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.03)}" +
+    ".nl-pay-tile svg{display:block}" +
+    ".nl-pay-tile .visa{font-weight:800;font-style:italic;color:#1A1F71;font-size:14px;letter-spacing:.5px}" +
+    ".nl-pay-tile .amex{font-weight:800;color:#006FCF;font-size:11px;letter-spacing:.5px}" +
+    ".nl-pay-tile .nx{font-weight:800;color:#FF6A13;font-size:10.5px}" +
+    ".nl-pay-tile .mp{font-weight:800;color:#00A6E0;font-size:10px;white-space:nowrap}" +
     "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats,#nalo-landing .nl-pr{grid-template-columns:1fr}#nalo-landing .nl-ts-media,#nalo-landing .nl-pr-media{max-width:360px;margin:0 auto}#nalo-landing .nl-pr-media{order:-1}#nalo-landing .nl-pr-txt h2{text-align:left;font-size:28px}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
     "#nalo-landing .nl-halo-grid,#nalo-landing .nl-darkcards,#nalo-landing .nl-testi,#nalo-landing .nl-isplit,#nalo-landing .nl-vs2{grid-template-columns:1fr}#nalo-landing .nl-islider{grid-template-columns:1fr 1fr;gap:12px}#nalo-landing .nl-halo-img{max-width:340px;margin:0 auto}#nalo-landing .nl-darksec h2,#nalo-landing .nl-isplit h2,#nalo-landing .nl-vs2-left h2{font-size:26px}#nalo-landing .nl-isplit h2{text-align:left}" +
     "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:5px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:60px;height:40px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
@@ -596,17 +598,26 @@
         '<div class="nl-trust-item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M1 5a1 1 0 011-1h11a1 1 0 011 1v1h3.4a1 1 0 01.8.4l2.6 3.4a1 1 0 01.2.6V15a1 1 0 01-1 1h-1.1a3 3 0 01-5.8 0H8.9a3 3 0 01-5.8 0H2a1 1 0 01-1-1z"/><circle cx="6" cy="17.5" r="1.7" fill="#fff"/><circle cx="16" cy="17.5" r="1.7" fill="#fff"/></svg></span><div><b>Envío a todo el país</b><span>Lo recibís en 2 a 5 días hábiles vía Andreani.</span></div></div>' +
       '</div>' +
       '<hr class="nl-trust-div">' +
-      '<div class="nl-pay"><span class="nl-pay-lbl">Pagá con tarjeta de crédito o débito</span>' +
+      '<div class="nl-pay"><span class="nl-pay-lbl">Pagá seguro con</span>' +
         '<div class="nl-pay-tiles">' +
           '<div class="nl-pay-tile"><span class="visa">VISA</span></div>' +
           '<div class="nl-pay-tile"><svg viewBox="0 0 40 24" width="32" height="20"><circle cx="16" cy="12" r="8" fill="#EB001B"/><circle cx="24" cy="12" r="8" fill="#F79E1B"/></svg></div>' +
           '<div class="nl-pay-tile"><span class="amex">AMEX</span></div>' +
           '<div class="nl-pay-tile"><span class="nx">Naranja X</span></div>' +
+          '<div class="nl-pay-tile"><span class="mp">mercado pago</span></div>' +
         '</div>' +
       '</div>' +
     '</div></div>';
 
   mount.innerHTML = TRUST + secs.map(render).join("");
+
+  // mover el bloque de envíos/pagos debajo del botón, dentro de la descripción
+  (function () {
+    var trust = mount.querySelector(".nl-trust");
+    var desc = document.querySelector("#ns-block-description .js-product-description") ||
+               document.querySelector("#ns-block-description");
+    if (trust && desc) desc.insertBefore(trust, desc.firstChild);
+  })();
 
   // Reseñas de Wigy: las inyecta async DENTRO de la ficha del producto (arriba de la
   // landing). Las movemos al final del body para que queden después de todo el contenido.
