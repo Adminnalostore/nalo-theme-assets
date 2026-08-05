@@ -437,8 +437,8 @@
     ".nl-pay{display:flex;align-items:center;gap:12px;flex-wrap:wrap}" +
     ".nl-pay-lbl{font-size:12.5px;color:#555;font-weight:600}" +
     ".nl-pay-tiles{display:flex;gap:7px;flex-wrap:wrap}" +
-    ".nl-pay-tile{height:30px;width:48px;padding:0 7px;border:1px solid #ebebeb;border-radius:5px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.03)}" +
-    ".nl-pay-tile img{max-height:18px;max-width:100%;width:auto;height:auto;object-fit:contain;display:block}" +
+    ".nl-pay-tile{height:30px;min-width:46px;padding:0 9px;border:1px solid #ebebeb;border-radius:5px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.03)}" +
+    ".nl-pay-tile img{height:18px;width:auto;max-width:62px;object-fit:contain;display:block}" +
     "@media(max-width:768px){#nalo-landing .nl-ts,#nalo-landing .nl-gl,#nalo-landing .nl-stats,#nalo-landing .nl-feats,#nalo-landing .nl-pr{grid-template-columns:1fr}#nalo-landing .nl-ts-media,#nalo-landing .nl-pr-media{max-width:360px;margin:0 auto}#nalo-landing .nl-pr-media{order:-1}#nalo-landing .nl-pr-txt h2{text-align:left;font-size:28px}#nalo-landing .nl-h{font-size:28px}#nalo-landing .nl-ts h2{text-align:left;font-size:28px}" +
     "#nalo-landing .nl-halo-grid,#nalo-landing .nl-darkcards,#nalo-landing .nl-testi,#nalo-landing .nl-isplit,#nalo-landing .nl-vs2{grid-template-columns:1fr}#nalo-landing .nl-islider{grid-template-columns:1fr 1fr;gap:12px}#nalo-landing .nl-halo-img{max-width:340px;margin:0 auto}#nalo-landing .nl-darksec h2,#nalo-landing .nl-isplit h2,#nalo-landing .nl-vs2-left h2{font-size:26px}#nalo-landing .nl-isplit h2{text-align:left}" +
     "#nalo-landing .nl-gl-right{order:1;grid-template-columns:1fr 1fr;gap:10px}#nalo-landing .nl-gl-left{order:2;text-align:left}#nalo-landing .nl-gl-left .buy{width:100%}#nalo-landing .nl-gl-thumbs{grid-column:1/-1;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:5px}#nalo-landing .nl-gl-thumbs button{flex:0 0 auto;width:60px;height:40px}#nalo-landing .nl-gl-left .pct{font-size:64px}#nalo-landing .nl-gl-left h3{font-size:24px}}";
